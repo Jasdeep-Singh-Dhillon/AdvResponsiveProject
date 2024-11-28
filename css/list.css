@@ -1,3 +1,30 @@
-body{
-    font
+body {
+    font-family: "Inter";
+}
+
+header {
+    font-family: "Protest Revolution";
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    padding: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f94449;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
 }

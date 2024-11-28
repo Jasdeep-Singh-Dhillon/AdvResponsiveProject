@@ -8,6 +8,20 @@
     <title>Anime and Manga List</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Iceberg&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Protest+Revolution&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Iceberg&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Protest+Revolution&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Iceberg&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Protest+Revolution&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=Doto:wght@100..900&family=Iceberg&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Protest+Revolution&family=Righteous&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,8 +30,54 @@
             Anime and Manga List
         </h1>
     </header>
-    <nav role="navigation"></nav>
-    <main role="main"></main>
+    <nav role="navigation">
+        <a href="./index.html">Home</a>
+        <a href="./list.html">Your List</a>
+        <a href="./airing.html">Arriving Soon</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./contact.html">Contact Us</a>
+    </nav>
+    <main role="main">
+        <form action="get">
+            <label for="Search">Search : </label>
+            <input type="text" placeholder="Filter" name="Search" id="">
+            <fieldset>
+                <legend>List</legend>
+                <ul>
+                    <li>All</li>
+                    <li>Watching</li>
+                    <li>Reading</li>
+                    <li>Completed</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Filters</legend>
+                <select name="Formate" id="">
+                    <option value=""></option>
+                </select>
+                <select name="Status" id="">
+                    <option value=""></option>
+                </select>
+                <select name="Genres" id="">
+                    <option value=""></option>
+                </select>
+                <select name="Country" id="">
+                    <option value=""></option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Year</legend>
+                <input type="range" min="0" max="100" value="20">
+            </fieldset>
+            <fieldset>
+                <legend>Sort</legend>
+                <select name="Score" id=""></select>
+            </fieldset>
+        </form>
+        <div>
+            <h3>Reading</h3>
+        </div>
+    </main>
     <footer></footer>
 </body>
 
