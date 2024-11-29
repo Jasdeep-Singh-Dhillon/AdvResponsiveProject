@@ -39,7 +39,8 @@ main {
   overflow-x: scroll;
 }
 
-#anime_list {
+#anime_list,
+#manga_list {
   margin: 0.1rem;
   gap: 10px;
   flex-wrap: nowrap;
@@ -47,80 +48,135 @@ main {
 
 #manga_in_progress {
   grid-area: "mangas";
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#review_section {
+  grid-area: reviews;
+  border: 1px solid red;
 }
 
 #site_updates {
-  grid-area: "updates";
+  grid-area: updates;
+  border: 1px solid red;
 }
 
 #user_posts {
+  border: 1px solid red;
   grid-area: posts;
+  overflow-y: scroll;
+  height: 100%;
 }
 
-.anime {
+.anime,
+.manga {
   background-color: var(--card-background);
   width: 200px;
   height: 280px;
   border-radius: 1rem;
   padding: 0.5rem;
-  box-shadow: 0px 0px 8px rgba(138, 138, 138, 0.4);
+  box-shadow: 0px 0px 8px var(--card-shadow);
+  transition: all 300ms;
 }
 
-.anime img {
+.anime img,
+.manga img {
   border-radius: 0.5rem;
   max-width: 200px;
 }
 
-.anime h3 {
+.anime h3,
+.manga h3 {
   text-align: center;
-  padding: .25rem;
-  margin: .25rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
 }
 
-.anime:hover {
-    width: 500px;
-    transition: all 300ms;
+.anime:hover,
+.manga:hover {
+  width: 500px;
+  transition: all 300ms;
 }
 
-.anime:hover .anime_details {
-    transition: all 900ms;
-    display: flex;
+.anime:hover .anime_details,
+.manga:hover .manga_details {
+  transition: all 900ms;
+  display: flex;
 }
 
-.anime_details {
-    width: 200px;
-    margin-left: .75rem;
-    display: none;
-    align-content: center;
+.anime_details,
+.manga_details {
+  width: 200px;
+  margin-left: 0.75rem;
+  display: none;
+  align-content: center;
+  transition: all 900ms;
 }
 
-.anime_buttons {
-    gap: 10px;
+.anime_buttons,
+.manga_buttons {
+  gap: 10px;
 }
 
-.watch {
-    border-radius: 1rem;
-    width: 90%;
-    padding: .25rem 1rem;
-    border: none;
-    background-color: var(--primary);
-    font-family: 'Inter', sans-serif;
-    color: var(--text);
+.watch,
+.read {
+  border-radius: 1rem;
+  width: 90%;
+  padding: 0.25rem 1rem;
+  border: none;
+  background-color: var(--primary);
+  font-family: "Inter", sans-serif;
+  color: var(--text);
 }
 
 .plan {
-    border-radius: 1rem;
-    width: 90%;
-    padding: .25rem 1rem;
-    border: 1px solid var(--primary);
-    background-color: var(--card-background);
-    font-family: 'Inter', sans-serif;
-    color: var(--text);
+  border-radius: 1rem;
+  width: 90%;
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--primary);
+  background-color: var(--card-background);
+  font-family: "Inter", sans-serif;
+  color: var(--text);
 }
 
 .synopsis {
-    font-size: smaller;
-    overflow-y: scroll;
+  font-size: smaller;
+  overflow-y: scroll;
+  margin-bottom: 0.75rem;
+  color: var(--secondary-text);
+}
+
+#posts {
+  gap: 10px;
+}
+
+.post {
+  border: 1px var(--border-color) solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--card-background);
+  box-shadow: 0px 0px 8px rgba(249, 68, 73, 0.3);
+  height: 125px;
+}
+.post h4 {
+  margin: 0.25rem;
+}
+
+.post span {
+  color: var(--secondary-text);
+  font-size: small;
+  margin: 0.25rem;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.post img {
+  max-height: 125px;
+  border-radius: 0.75rem;
+}
+#site_updates div {
+    width: 100%;
 }
 
 footer {
