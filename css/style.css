@@ -60,12 +60,28 @@ nav a {
     padding: 1rem;
     /* use fluid size */
     font-size: 1.5rem;
+}
+
+nav li {
     transition: all 400ms ;
 }
 
-nav a:hover, #account_icon:hover {
-    color: var(--secondary);
+#account_icon:hover {
     transition: all 400ms ;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+#account_icon:hover img {
+    transition: all 400ms ;
+    border: 2px solid var(--secondary);
+}
+
+nav li:hover {
+    transition: all 400ms ;
+    transform: scale(1.1);
 }
 
 .flex {
@@ -88,13 +104,16 @@ nav a:hover, #account_icon:hover {
     color: var(--text);
     text-decoration: none;
     font-family: 'Inter', serif;
+    transition: all 400ms ;
 }
 
 #account_icon img {
     margin-right: .85rem;
+    border: 2px solid var(--card-background);
     max-width: 75px;
     max-height: 75px;
     border-radius: 3rem;
+    transition: all 400ms;
 }
 
 #current {

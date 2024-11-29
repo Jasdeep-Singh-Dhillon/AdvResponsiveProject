@@ -33,7 +33,7 @@ main {
   z-index: -1;
 }
 
-#anime_in_progress {
+#trending_anime {
   grid-area: animes;
   width: 100%;
   max-height: max-content;
@@ -47,7 +47,7 @@ main {
   flex-wrap: nowrap;
 }
 
-#manga_in_progress {
+#trending_manga {
   grid-area: mangas;
   width: 100%;
   overflow-x: scroll;
@@ -76,6 +76,7 @@ main {
   padding: 0.5rem;
   box-shadow: 0px 0px 8px var(--card-shadow);
   transition: all 300ms;
+  border: 2px solid var(--border-color);
 }
 
 .anime img,
@@ -99,21 +100,23 @@ main {
 
 .anime:hover .anime_details,
 .manga:hover .manga_details {
-  transition: all 900ms;
-  display: flex;
+  transition: all 300ms;
+  opacity: 1;
 }
 
 .anime_details,
 .manga_details {
   width: 200px;
   margin-left: 0.75rem;
-  display: none;
+  opacity: 0;
   align-content: center;
-  transition: all 900ms;
+  align-items: center;
+  transition: all 300ms;
 }
 
 .anime_buttons,
 .manga_buttons {
+  width: 200px;
   gap: 10px;
 }
 
@@ -155,7 +158,6 @@ main {
   border-radius: 1rem;
   padding: 1rem;
   background-color: var(--card-background);
-  box-shadow: 0px 0px 8px rgba(249, 68, 73, 0.3);
   height: 125px;
 }
 .post h4 {
@@ -188,7 +190,7 @@ main {
 .review {
   background-color: var(--card-background);
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0px 0px 5px var(--card-shadow);
 }
 
@@ -196,36 +198,36 @@ main {
   max-width: 100%;
   max-height: 150px;
   margin: auto;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .review h4 {
-    margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .review span {
-    color: var(--secondary-text);
-    font-size: small;
+  color: var(--secondary-text);
+  font-size: small;
 }
 
 .icons {
-    justify-content: end;
-    gap: 20px;
-    margin-top: 1rem;
+  justify-content: end;
+  gap: 20px;
+  margin-top: 1rem;
 }
 
 .icons .flex {
-    transition: all 300ms;
+  transition: all 300ms;
 }
 
 .icons .flex:hover {
-    transform: scale(1.2);
-    transition: all 300ms;
+  transform: scale(1.2);
+  transition: all 300ms;
 }
 
 .icons img {
-    max-width: 16px;
-    margin-right: 4px;
+  max-width: 16px;
+  margin-right: 4px;
 }
 
 footer {
