@@ -80,11 +80,11 @@ main {
 }
 
 .manga {
-    height: 320px;
+  height: 320px;
 }
 
 .manga_img {
-    margin: auto;
+  margin: auto;
 }
 
 .anime img,
@@ -244,3 +244,25 @@ footer {
 }
 
 /* Change Hero background Image in media query */
+@media screen and (max-width: 1100px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "animes"
+      "mangas"
+      "posts"
+      "reviews"
+      "updates";
+  }
+
+  #posts {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #reviews {
+    grid-template-columns: 1fr;
+  }
+}
