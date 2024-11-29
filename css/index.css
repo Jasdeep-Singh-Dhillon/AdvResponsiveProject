@@ -54,16 +54,13 @@ main {
 
 #review_section {
   grid-area: reviews;
-  border: 1px solid red;
 }
 
 #site_updates {
   grid-area: updates;
-  border: 1px solid red;
 }
 
 #user_posts {
-  border: 1px solid red;
   grid-area: posts;
   overflow-y: scroll;
   height: 100%;
