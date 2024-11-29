@@ -79,10 +79,19 @@ main {
   border: 2px solid var(--border-color);
 }
 
+.manga {
+    height: 320px;
+}
+
+.manga_img {
+    margin: auto;
+}
+
 .anime img,
 .manga img {
   border-radius: 0.5rem;
   max-width: 200px;
+  align-items: center;
 }
 
 .anime h3,
