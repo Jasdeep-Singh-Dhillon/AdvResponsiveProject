@@ -34,8 +34,9 @@ main {
 }
 
 #anime_in_progress {
-  grid-area: "animes";
+  grid-area: animes;
   width: 100%;
+  max-height: max-content;
   overflow-x: scroll;
 }
 
@@ -47,7 +48,7 @@ main {
 }
 
 #manga_in_progress {
-  grid-area: "mangas";
+  grid-area: mangas;
   width: 100%;
   overflow-x: scroll;
 }
@@ -62,8 +63,8 @@ main {
 
 #user_posts {
   grid-area: posts;
+  max-height: 100%;
   overflow-y: scroll;
-  height: 100%;
 }
 
 .anime,
@@ -146,6 +147,7 @@ main {
 
 #posts {
   gap: 10px;
+  padding: 1rem;
 }
 
 .post {
@@ -172,8 +174,58 @@ main {
   max-height: 125px;
   border-radius: 0.75rem;
 }
+
 #site_updates div {
-    width: 100%;
+  width: 100%;
+}
+
+#reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.review {
+  background-color: var(--card-background);
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px var(--card-shadow);
+}
+
+.review img {
+  max-width: 100%;
+  max-height: 150px;
+  margin: auto;
+  border-radius: .25rem;
+}
+
+.review h4 {
+    margin: .5rem 0;
+}
+
+.review span {
+    color: var(--secondary-text);
+    font-size: small;
+}
+
+.icons {
+    justify-content: end;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.icons .flex {
+    transition: all 300ms;
+}
+
+.icons .flex:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+.icons img {
+    max-width: 16px;
+    margin-right: 4px;
 }
 
 footer {
