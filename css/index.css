@@ -1,0 +1,62 @@
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "hero hero"
+    "animes posts"
+    "mangas posts"
+    "reviews posts"
+    "updates updates";
+    margin: 2rem;
+    gap: 1rem;
+}
+
+#hero {
+  grid-area: hero;
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  height: 0;
+  padding-top: 40%;
+  border: 1px solid red;
+}
+
+#hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background: inherit;
+    filter: blur(30px);
+    z-index: -1;
+}
+
+#anime_in_progress {
+    grid-area: "animes";
+    border: 1px solid red;
+}
+
+#manga_in_progress {
+    grid-area: "mangas";
+    border: 1px solid red;
+}
+
+#site_updates {
+    grid-area: "updates";
+    border: 1px solid red;
+}
+
+#user_posts {
+    grid-area: posts;
+    border: 1px solid red;
+}
+
+footer {
+    border: 1px solid red;
+    margin: 2rem;
+}
+
+/* Change Hero background Image in media query */
