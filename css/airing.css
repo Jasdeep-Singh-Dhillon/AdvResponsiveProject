@@ -1,0 +1,52 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.filters .tags {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.filters .sorting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-grid {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.card .info {
+    margin-top: 10px;
+}
+
+.card .info p {
+    margin: 5px 0;
+}
