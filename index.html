@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home_Page">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home_Page">
+  <title>AniTracker</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <header role="heading"></header>
-    <nav role="navigation"></nav>
-    <main role="main"></main>
-    <footer></footer>
+  <header class="flex flex-align-center">
+    <div id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
+      <img src="img/logo.png" alt="Logo of the Site" id="logo">
+      <h1>
+        AniTracker
+      </h1>
+    </div>
+    <nav role="navigation">
+      <ul class="flex flex-align-center">
+        <li>
+          <a href="#" id="current">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="watch.html">
+            Watch
+          </a>
+        </li>
+        <li>
+          <a href="airing.html">
+            Airing
+          </a>
+        </li>
+        <li>
+          <a href="list.html">
+            List
+          </a>
+        </li>
+        <!-- <li>
+            <a href="profile.html">
+                Profile
+            </a>
+        </li> -->
+        <li>
+          <a href="contact.html">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a id="account_icon" class="flex flex-align-center" href="profile.html">
+      <img src="img/profile.png" alt="Profile Icon">
+      <h3>
+        Account
+      </h3>
+    </a>
+  </header>
+  <main role="main"></main>
+  <footer></footer>
 </body>
+
 </html>
