@@ -25,18 +25,54 @@
 </head>
 
 <body>
-    <header role="heading">
-        <h1>
-            Anime and Manga List
-        </h1>
-    </header>
-    <nav role="navigation">
-        <a href="./index.html">Home</a>
-        <a href="./list.html">Your List</a>
-        <a href="./airing.html">Arriving Soon</a>
-        <a href="./profile.html">Profile</a>
-        <a href="./contact.html">Contact Us</a>
-    </nav>
+    <header class="flex flex-align-center">
+        <div id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
+          <img src="img/logo.png" alt="Logo of the Site" id="logo">
+          <h1>
+            AniTracker
+          </h1>
+        </div>
+        <nav role="navigation">
+          <ul class="flex flex-align-center">
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="watch.html">
+                Watch
+              </a>
+            </li>
+            <li>
+              <a href="airing.html">
+                Airing
+              </a>
+            </li>
+            <li>
+              <a href="list.html" id="current">
+                List
+              </a>
+            </li>
+            <!-- <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li> -->
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a id="account_icon" class="flex flex-align-center" href="profile.html">
+          <img src="img/profile.png" alt="Profile Icon">
+          <h3>
+            Account
+          </h3>
+        </a>
+      </header>
     <main role="main">
         <form action="get">
             <label for="Search">Search : </label>

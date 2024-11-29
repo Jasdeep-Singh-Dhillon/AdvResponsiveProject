@@ -20,7 +20,8 @@ header {
     justify-content: space-around;
     padding: 1rem;
     background-color: var(--card-background);
-    gap: 20px
+    gap: 20px;
+    transition: all 1000ms ;
 }
 
 #logo {
@@ -31,6 +32,8 @@ header {
 #site_title {
     font-family: 'Protest Revolution', serif;
     letter-spacing: .5rem;
+
+    /* use fluid size */
     font-size: 1.5rem;
 }
 
@@ -49,7 +52,15 @@ nav a {
     padding: 1rem;
     /* use fluid size */
     font-size: 1.5rem;
+    transition: all 400ms ;
 }
+
+nav a:hover, #account_icon:hover {
+    color: var(--secondary);
+    transition: all 400ms ;
+}
+
+
 
 .flex {
     display: flex;
@@ -77,10 +88,6 @@ nav a {
 }
 
 @media screen and (max-width: 1200px){
-    body {
-        background-color: black;
-    }
-
     header {
         flex-wrap: wrap;
     }
@@ -124,8 +131,7 @@ nav a {
 
     nav li {
         width: 100%;
-        /* border-bottom: 1px solid var(--border-color);
-        border-top: 1px solid var(--border-color); */
-        text-align: center
+        text-align: center;
+        padding: .5rem;
     }
 }

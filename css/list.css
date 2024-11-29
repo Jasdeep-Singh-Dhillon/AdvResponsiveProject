@@ -7,13 +7,7 @@ header {
     text-align: center;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: black;
-    padding: 15px;
-}
+
 
 a {
     color: white;
