@@ -7,8 +7,6 @@ header {
     text-align: center;
 }
 
-
-
 a {
     color: white;
     text-decoration: none;
@@ -21,4 +19,16 @@ a:hover{
 main{
     display: flex;
     flex-direction: row;
+}
+
+form{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+#sidebar-list ul{
+    list-style-type: none;
 }
