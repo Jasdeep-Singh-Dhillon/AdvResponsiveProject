@@ -1,170 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Protest+Revolution&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Protest+Revolution&family=Righteous&display=swap");
 
 :root {
-    --primary: #F94449;
-    --secondary: #C1807C;
-    --background: #1f1919;
-    --card-background: #171717;
-    --text: #fafafa;
-    --secondary-text: #c9c9c9;
-    --border-color: rgba(146, 146, 146, 0.4);
-    --card-shadow: rgba(138, 138, 138, 0.4);
+  --primary: #f94449;
+  --secondary: #c1807c;
+  --background: #1f1919;
+  --card-background: #171717;
+  --text: #fafafa;
+  --secondary-text: #c9c9c9;
+  --border-color: rgba(146, 146, 146, 0.4);
+  --card-shadow: rgba(138, 138, 138, 0.4);
 }
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 
-    color: var(--text);
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+  color: var(--text);
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", serif;
 }
 
 header {
-    justify-content: space-around;
-    padding: 1rem;
-    background-color: var(--card-background);
-    gap: 20px;
-    transition: all 1000ms ;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: var(--card-background);
+  gap: 20px;
+  transition: all 1000ms;
 }
 
 #logo {
-    max-width: 75px;
-    margin: 0 1em;
+  max-width: 75px;
+  margin: 0 1em;
 }
 
-#site_title h1{
-    font-family: 'Protest Revolution', serif;
-    letter-spacing: .5rem;
+#site_title h1 {
+  font-family: "Protest Revolution", serif;
+  letter-spacing: 0.5rem;
 
-    /* use fluid size */
-    font-size: 1.5rem;
+  /* use fluid size */
+  font-size: 1.5rem;
 }
-
 
 nav ul {
-    justify-content: space-evenly;
-    list-style: none;
-    font-family: 'Righteous', serif;
-    align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: "Righteous", serif;
+  align-items: center;
 }
 
 nav a {
-    text-align: center;
-    color: var(--text);
-    text-decoration: none;
-    padding: 1rem;
-    /* use fluid size */
-    font-size: 1.5rem;
+  text-align: center;
+  color: var(--text);
+  text-decoration: none;
+  padding: 1rem;
+  /* use fluid size */
+  font-size: 1.5rem;
 }
 
 nav li {
-    transition: all 400ms ;
+  transition: all 400ms;
 }
 
 #account_icon:hover {
-    transition: all 400ms ;
+  transition: all 400ms;
 }
 
 nav a:hover {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 #account_icon:hover img {
-    transition: all 400ms ;
-    border: 2px solid var(--secondary);
+  transition: all 400ms;
+  border: 2px solid var(--secondary);
 }
 
 nav li:hover {
-    transition: all 400ms ;
-    transform: scale(1.1);
+  transition: all 400ms;
+  transform: scale(1.1);
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .flex-justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #account_icon {
-    color: var(--text);
-    text-decoration: none;
-    font-family: 'Inter', serif;
-    transition: all 400ms ;
+  color: var(--text);
+  text-decoration: none;
+  font-family: "Inter", serif;
+  transition: all 400ms;
 }
 
 #account_icon img {
-    margin-right: .85rem;
-    border: 2px solid var(--card-background);
-    max-width: 75px;
-    max-height: 75px;
-    border-radius: 3rem;
-    transition: all 400ms;
+  margin-right: 0.85rem;
+  border: 2px solid var(--card-background);
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 3rem;
+  transition: all 400ms;
 }
 
 #current {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
-@media screen and (max-width: 1100px){
-    header {
-        flex-wrap: wrap;
-    }
-    
-    #site_title {
-        order: 1;
-    }
+@media screen and (max-width: 1100px) {
+  header {
+    flex-wrap: wrap;
+  }
 
-    #account_icon {
-        order: 2;
-    }
+  #site_title {
+    order: 1;
+  }
 
-    nav {
-        margin: 0 2rem;
-        order: 3;
-    }
+  #account_icon {
+    order: 2;
+  }
+
+  nav {
+    margin: 0 2rem;
+    order: 3;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    header {
-        flex-direction: column;
-        gap: 0;
-    }
+  header {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    #account_icon {
-        order: 4;
-        padding: 2rem;
-    }
+  #account_icon {
+    order: 4;
+    padding: 2rem;
+  }
 
-    nav {
-        width: 100%;
-        margin: 0;
-    }
+  nav {
+    width: 100%;
+    margin: 0;
+  }
 
-    nav ul {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-    }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
 
-    nav li {
-        width: 100%;
-        text-align: center;
-        padding: .5rem;
-    }
+  nav li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+  border: 3px solid var(--text);
 }
