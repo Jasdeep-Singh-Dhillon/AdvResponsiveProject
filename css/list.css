@@ -12,16 +12,20 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #f94449;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "sidebar reading"
+        "sidebar watching";
 }
 
-form{
+form {
+    grid-area: sidebar;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -29,6 +33,142 @@ form{
     border: 1px solid var(--border-color);
 }
 
-#sidebar-list ul{
+#sidebar-list ul {
     list-style-type: none;
+    padding: 10px 0;
+}
+
+#sidebar-list ul li {
+    padding: 5px 0;
+}
+
+#k-filters ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+#k-filters ul li {
+    padding: 5px 0;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+}
+
+/* select:focus {
+    background-color: var(--background);
+} */
+
+#reading {
+    grid-area: reading;
+}
+
+.card {
+    background-color: var(--card-backgroung);
+    border-radius: 8px;
+    box-shadow: 0 0px 10px var(--card-shadow);
+    margin: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 15% 40% 15% 15% 15%;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.008);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    animation: pulse 2s infinite;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-subtitle {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    color: #777;
+    font-size: 14px;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: #bbb;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+#watching {
+    grid-area: watching;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(minmax(1,4), minmax(250px, 1fr)); */
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.grid-item {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    border: 1px solid #999;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.top-half,
+.bottom-half {
+    flex: 1;
+}
+
+.top-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #888;
+    z-index: 1;
+}
+
+.bottom-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Adjust transparency here */
+    z-index: 2;
 }

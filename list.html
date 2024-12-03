@@ -69,52 +69,62 @@
           <li><a href="">Completed</a></li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset id="k-filters">
         <legend>Filters</legend>
-        <select name="Formate" id="">
-          <option value="">Formate</option>
-          <option value="TV">TV</option>
-          <option value="TV_Short">TV Short</option>
-          <option value="Movie">Movie</option>
-          <option value="Special">Special</option>
-          <option value="OVA">OVA</option>
-          <option value="ONA">ONA</option>
-          <option value="Music">Music</option>
-        </select>
-        <select name="Status" id="">
-          <option value="">Status</option>
-          <option value="Finished">Finished</option>
-          <option value="Releasing">Releasing</option>
-          <option value="Not Yet Released">Not Yet Released</option>
-          <option value="Cancelled">Cancelled</option>
-        </select>
-        <select name="Genres" id="">
-          <option value="">Genres</option>
-            <option value="Action">Action</option>
-            <option value="Adventure">Adventure</option>
-            <option value="Comedy">Comedy</option>
-            <option value="Drama">Drama</option>
-            <option value="Ecchi">Ecchi</option>
-            <option value="Fantacy">Fantacy</option>
-            <option value="Horror">Horror</option>
-            <option value="Mohou_Shoujo">Mohou Shoujo</option>
-            <option value="Mecha">Mecha </option>
-            <option value="Music">Music</option>
-            <option value="Mystery">Mystery</option>
-            <option value="Psycological">Psycological</option>
-            <option value="Romance">Romance</option>
-            <option value="Sci-Fi">Sci-Fi</option>
-            <option value="Slice_of_life">Slice of Life</option>
-            <option value="Sports">Sports</option>
-            <option value="Supernatural">Supernatural</option>
-            <option value="Thriller">Thriller</option>
-        </select>
-        <select name="Country" id="">
-          <option value="">Countrt</option>
-          <option value="Japan">Japan</option>
-          <option value="South_Korea">South_Korea</option>
-          <option value="China">China</option>
-        </select>
+        <ul>
+          <li>
+            <select name="Formate" id="">
+              <option value="">Formate</option>
+              <option value="TV">TV</option>
+              <option value="TV_Short">TV Short</option>
+              <option value="Movie">Movie</option>
+              <option value="Special">Special</option>
+              <option value="OVA">OVA</option>
+              <option value="ONA">ONA</option>
+              <option value="Music">Music</option>
+            </select>
+          </li>
+          <li>
+            <select name="Status" id="">
+              <option value="">Status</option>
+              <option value="Finished">Finished</option>
+              <option value="Releasing">Releasing</option>
+              <option value="Not Yet Released">Not Yet Released</option>
+              <option value="Cancelled">Cancelled</option>
+            </select>
+          </li>
+          <li>
+            <select name="Genres" id="">
+              <option value="">Genres</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Drama">Drama</option>
+              <option value="Ecchi">Ecchi</option>
+              <option value="Fantacy">Fantacy</option>
+              <option value="Horror">Horror</option>
+              <option value="Mohou_Shoujo">Mohou Shoujo</option>
+              <option value="Mecha">Mecha </option>
+              <option value="Music">Music</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Psycological">Psycological</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Slice_of_life">Slice of Life</option>
+              <option value="Sports">Sports</option>
+              <option value="Supernatural">Supernatural</option>
+              <option value="Thriller">Thriller</option>
+            </select>
+          </li>
+          <li>
+            <select name="Country" id="">
+              <option value="">Countrt</option>
+              <option value="Japan">Japan</option>
+              <option value="South_Korea">South_Korea</option>
+              <option value="China">China</option>
+            </select>
+          </li>
+        </ul>
       </fieldset>
       <fieldset>
         <legend>Year</legend>
@@ -136,9 +146,40 @@
         </select>
       </fieldset>
     </form>
-    <div>
+    <div id="reading">
       <h3>Reading</h3>
-    </div>
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <div class="card-title">1st</div>
+        <div class="card-subtitle">Score: 75</div>
+        <div class="card-text">Progress: 0/25</div>
+        <div class="card-text">Type: TV</div>
+      </div>
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <div class="card-title">2nd</div>
+        <div class="card-subtitle">Score: 75</div>
+        <div class="card-text">Progress: 0/25</div>
+        <div class="card-text">Type: TV</div>
+      </div>
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <div class="card-title">3rd</div>
+        <div class="card-subtitle">Score: 75</div>
+        <div class="card-text">Progress: 0/25</div>
+        <div class="card-text">Type: TV</div>
+      </div>
+      <div class="card">
+        <div class="image-placeholder"></div>
+        <div class="card-title">4th</div>
+        <div class="card-subtitle">Score: 75</div>
+        <div class="card-text">Progress: 0/25</div>
+        <div class="card-text">Type: TV</div>
+      </div>
+      <div id="watching">
+        <h3>Watching</h3>
+        
+      </div>
   </main>
   <footer></footer>
 </body>
