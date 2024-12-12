@@ -1,59 +1,206 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Watch_Page">
-    <title>Watch Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/watch.css">
+    <meta name="description" content="Watch Anime - Latest releases, recommendations, and more!">
+    <title>Watch Anime</title>
+    <link rel="stylesheet" href="/css/watch_anime.css">
 </head>
-<body>
-    <header class="flex flex-align-center">
-        <div id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
-          <img src="img/logo.png" alt="Logo of the Site" id="logo">
-          <h1>
-            AniTracker
-          </h1>
+<body class="my_body">
+    <section class="header_top banner_ds_class">
+        <div class="banner-content_ds_class">
+            <h1>WATCH ANIME</h1>
+            <p>Your ultimate destination for the latest releases, recommendations, and upcoming anime!</p>
         </div>
-        <nav role="navigation" aria-label="navigation">
-          <ul class="flex flex-align-center">
-            <li>
-              <a href="index.html">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="watch.html" id="current">
-                Watch
-              </a>
-            </li>
-            <li>
-              <a href="airing.html">
-                Airing
-              </a>
-            </li>
-            <li>
-              <a href="list.html">
-                List
-              </a>
-            </li>
-            <li>
-              <a href="contact.html">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a id="account_icon" class="flex flex-align-center" href="profile.html">
-          <img src="img/profile.png" alt="Profile Icon">
-          <h3>
-            Account
-          </h3>
-        </a>
-      </header>
-    <nav role="navigation"></nav>
-    <main role="main"></main>
-    <footer></footer>
+    </section>
+    
+
+    <main class="main-container">
+     
+        <section class="latest-release" id="latest_release_ds_id">
+            <h2>Latest Release</h2>
+            <div class="latest-release-content">
+                <img src="images/picture5.jpg" alt="Anime Title" class="anime-image_ds_class">
+                <div class="anime-info_ds_class">
+                    <h3>Anime Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="watch-more_ds_class">WATCH MORE</button>
+                </div>
+            </div>
+
+            
+        </section>
+
+      
+        <section class="recommendations" id="recommendations_ds_id">
+            <h2>Recommendations</h2>
+            <div class="recommendation-grid">
+                <div class="card_ds_class">
+                    <img src="img/wp4916214.jpg" alt="Attack on Titan">
+                    <h3>Attack on Titan</h3>
+                    <p>Experience the gripping tale of humanity's fight against the Titans.</p>
+                    <button>WATCH</button>
+                </div>
+                <div class="card_ds_class">
+                    <img src="images/picture2.jpg" alt="One Piece">
+                    <h3>One Piece</h3>
+                    <p>Embark on a journey with Luffy and his crew to find the One Piece treasure.</p>
+                    <button>WATCH</button>
+                </div>
+                <div class="card_ds_class">
+                    <img src="images/picture3.jpg" alt="One Piece - New Adventures">
+                    <h3>One Piece - New Adventures</h3>
+                    <p>Join the Straw Hat Pirates in their adventures in the Grand Line.</p>
+                    <button>WATCH</button>
+                </div>
+                <div class="card_ds_class">
+                    <img src="images/picture1.jpg" alt="Tokyo Ghoul">
+                    <h3>Tokyo Ghoul</h3>
+                    <p>Delve into Kaneki's dark world of ghouls and survival in Tokyo.</p>
+                    <button>WATCH</button>
+                </div>
+            </div>
+        </section>
+        
+
+     
+        <section class="upcoming" id="upcoming_ds_id">
+            <h2>Upcoming</h2>
+            <div class="upcoming-grid">
+                <div class="card_ds_class">
+                    <img src="images/card1.jpg" alt="Naruto">
+                    <h3>Naruto</h3>
+                    <p>Follow Naruto Uzumaki as he pursues his dream of becoming Hokage.</p>
+                    <button>WATCH</button>
+                </div>
+                <div class="card_ds_class">
+                    <img src="images/card2.webp" alt="Bleach">
+                    <h3>Bleach</h3>
+                    <p>Join Ichigo Kurosaki as he fights to protect both the living and the dead.</p>
+                    <button>WATCH</button>
+                </div>
+                <div class="card_ds_class">
+                    <img src="images/card3.jpg" alt="Shonen Alliance">
+                    <h3>Shonen Alliance</h3>
+                    <p>An epic crossover featuring iconic heroes from various shonen anime.</p>
+                    <button>WATCH</button>
+                </div>
+                <div class="card_ds_class">
+                    <img src="images/card5.png" alt="Sword Art Online">
+                    <h3>Sword Art Online</h3>
+                    <p>Explore virtual realities with Kirito and Asuna in this thrilling adventure.</p>
+                    <button>WATCH</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+  
+    <aside class="sidebar" id="sidebar_ds_id">
+        <section class="search-anime_ds_class">
+            <h2>Search Anime</h2>
+            <form>
+                <select name="genre" id="genre_ds_id">
+                    <option>Genre All</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Fantasy</option>
+                    <option>Horror</option>
+                    <option>Mystery</option>
+                    <option>Romance</option>
+                    <option>Sci-Fi</option>
+                    <option>Slice of Life</option>
+                    <option>Sports</option>
+                    <option>Supernatural</option>
+                    <option>Thriller</option>
+                    <option>Historical</option>
+                </select>
+        
+                <select name="seasonal" id="seasonal_ds_id">
+                    <option>Seasonal</option>
+                    <option>Winter</option>
+                    <option>Spring</option>
+                    <option>Summer</option>
+                    <option>Fall</option>
+                    <option>All Seasons</option>
+                </select>
+        
+                <select name="studio" id="studio_ds_id">
+                    <option>Studio All</option>
+                    <option>Studio Ghibli</option>
+                    <option>Madhouse</option>
+                    <option>Toei Animation</option>
+                    <option>Kyoto Animation</option>
+                    <option>Ufotable</option>
+                    <option>A-1 Pictures</option>
+                    <option>Sunrise</option>
+                    <option>J.C. Staff</option>
+                    <option>Trigger</option>
+                    <option>CloverWorks</option>
+                    <option>Bones</option>
+                </select>
+        
+                <select name="status" id="status_ds_id">
+                    <option>Status All</option>
+                    <option>Ongoing</option>
+                    <option>Completed</option>
+                    <option>Upcoming</option>
+                    <option>Cancelled</option>
+                    <option>Hiatus</option>
+                </select>
+        
+                <select name="type" id="type_ds_id">
+                    <option>Type All</option>
+                    <option>TV Series</option>
+                    <option>Movie</option>
+                    <option>OVA (Original Video Animation)</option>
+                    <option>ONA (Original Net Animation)</option>
+                    <option>Special</option>
+                    <option>Web Series</option>
+                    <option>Music Video</option>
+                </select>
+            </form>
+        </section>
+        
+
+        <section class="popular-series_ds_class">
+            <h2>Popular Series</h2>
+            <div class="tabs_ds_class">
+                <button>Weekly</button>
+                <button>Monthly</button>
+                <button>Yearly</button>
+            </div>
+        </section>
+
+        <section class="genres_ds_class">
+            <h2>Genres</h2>
+            <ul>
+                <li>Action</li>
+                <li>Adventure</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Fantasy</li>
+                <li>Horror</li>
+                <li>Mystery</li>
+                <li>Romance</li>
+                <li>Sci-Fi</li>
+                <li>Slice of Life</li>
+            </ul>
+        </section>
+    </aside>
+<section class="footer_sec">
+    <footer  id="footer_ds_id">
+        <h2>Join Us</h2>
+        <form class="subscribe-form_ds_class">
+            <input type="email" placeholder="Enter your email address">
+            <button>SUBSCRIBE</button>
+        </form>
+    </footer>
+</section>
 </body>
 </html>
