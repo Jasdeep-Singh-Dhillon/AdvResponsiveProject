@@ -249,7 +249,7 @@ main {
   grid-template-areas: "img title time" "changelog changelog changelog";
   justify-content: start;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0rem;
 }
 
 .update_logo {
