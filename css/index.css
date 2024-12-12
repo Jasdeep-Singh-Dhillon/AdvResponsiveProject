@@ -75,7 +75,6 @@ main {
   height: 280px;
   border-radius: 1rem;
   padding: 0.5rem;
-  box-shadow: 0px 0px 8px var(--card-shadow);
   transition: all 300ms;
   border: 2px solid var(--border-color);
 }
@@ -106,6 +105,7 @@ main {
 .manga:hover {
   width: 500px;
   transition: all 300ms;
+  box-shadow: 0px 0px 32px var(--secondary);
 }
 
 .anime:hover .anime_details,
@@ -219,7 +219,8 @@ main {
   background-color: var(--card-background);
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 5px var(--card-shadow);
+  /* box-shadow: 0px 0px 5px var(--card-shadow); */
+  border: 1px solid var(--border-color);
 }
 
 .review img {
@@ -256,6 +257,40 @@ main {
 .icons img {
   max-width: 16px;
   margin-right: 4px;
+}
+
+.update {
+  background-color: var(--card-background);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  display: grid;
+  grid-template-areas: "img title time" "changelog changelog changelog";
+  justify-content: start;
+  align-items: center;
+  margin: 1rem;
+}
+
+.update_logo {
+  max-width: 30px;
+  padding: .5rem;
+  margin: .5rem 1rem 0rem 1rem;
+  border-radius: 2rem;
+  grid-area: img;
+}
+
+.update .title {
+  grid-area: title;
+  margin: .5rem 1rem 0rem 1rem;
+}
+
+.update .time {
+  margin: .5rem 1rem 0rem 1rem;
+  color: var(--secondary-text);
+  font-size: x-small;
+}
+
+.update .changelog {
+  grid-area: changelog;
 }
 
 footer {
