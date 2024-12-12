@@ -113,6 +113,10 @@ body {
   border-radius: 1px;
 }
 
+.pro-activity-block:hover {
+  background-color: var(--background) !important;
+}
+
 .pro-activity-block-field {
   background-color: var(--background) !important;
 }
@@ -303,6 +307,14 @@ body {
   margin: 10px auto;
   background-color: var(--card-background);
   box-shadow: 0px 0px 8px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.pro-top-anime-card:hover,
+.pro-top-manga-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px var(--primary);
 }
 
 .pro-top-anime-card img,
@@ -331,6 +343,13 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   min-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.pro-activity-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px var(--primary);
 }
 
 .pro-activity-card-img {
