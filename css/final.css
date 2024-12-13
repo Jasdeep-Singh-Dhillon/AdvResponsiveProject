@@ -790,9 +790,9 @@ footer {
   font-size: xx-large;
   text-align: center;
   padding: 16px;
-  margin: 16px;
   border-radius: 8px;
-  width: 90%;
+  width: fit-content;
+  margin: 1rem auto;
 }
 
 .card_heading_kl,
