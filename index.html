@@ -13,12 +13,12 @@
 
 <body>
   <header class="flex flex-align-center">
-    <div id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
+    <a href="index.html" id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
       <img src="img/logo.png" alt="Logo of the Site" id="logo">
       <h1>
         AniTracker
       </h1>
-    </div>
+    </a>
     <nav role="navigation">
       <ul class="flex flex-align-center">
         <li>
@@ -55,7 +55,7 @@
       </h3>
     </a>
   </header>
-  <main role="main">
+  <main role="main" id="jd-main">
     <section id="hero" class="flex flex-justify-center">
     </section>
 
@@ -349,7 +349,7 @@
       </h2>
 
       <div id="posts" class="flex flex-column">
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -364,7 +364,7 @@
             <img src="img/profile.png" alt="User Post">
           </div>
         </div>
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -377,22 +377,7 @@
           </div>
 
         </div>
-        <div class="post flex flexa">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
-            <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
-            </span>
-          </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -407,7 +392,7 @@
             <img src="img/profile.png" alt="User Post">
           </div>
         </div>
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -422,7 +407,7 @@
             <img src="img/profile.png" alt="User Post">
           </div>
         </div>
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -437,7 +422,7 @@
             <img src="img/profile.png" alt="User Post">
           </div>
         </div>
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -452,7 +437,22 @@
             <img src="img/profile.png" alt="User Post">
           </div>
         </div>
-        <div class="post flex flexa">
+        <div class="post flex flex-align-center">
+          <div class="text flex flex-column">
+            <h4>
+              Title of Some Post
+            </h4>
+            <span>
+              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
+
+              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
+            </span>
+          </div>
+          <div class="post_img">
+            <img src="img/profile.png" alt="User Post">
+          </div>
+        </div>
+        <div class="post flex flex-align-center">
           <div class="text flex flex-column">
             <h4>
               Title of Some Post
@@ -619,7 +619,39 @@
     </section>
   </main>
   <footer>
-    Made by Group
+    <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W">
+    <h2 id="title_footer">AniTracker</h2>
+    <div id="group_members" class="flex flex-align-center flex-justify-center">
+      <span>Shivam Patel</span>
+      <span>Diksha Smotra</span>
+      <span>Krish Lavani</span>
+      <span>Neel Patel</span>
+      <span>Jasdeep Singh Dhillon</span>
+    </div>
+
+    <div id="references">
+      <h3>References</h3>
+      <ul>
+        <li>
+          <a href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
+          ">Get Responsive Background Image</a>
+        </li>
+        <li>
+          <a href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe">
+            Responsive Grid
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Conestoga College">Conestoga College</iframe>
+    <div id="footer_ds_id">
+      <h2>Join Us</h2>
+      <form class="subscribe-form_ds_class">
+        <input type="email" placeholder="Enter your email address">
+        <button>SUBSCRIBE</button>
+      </form>
+    </div>
   </footer>
 </body>
 

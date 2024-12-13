@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="./css/list.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
-<body>
-  <header class="flex flex-align-center">
+<body id="body_kl">
+  <header id="header_kl" class="flex flex-align-center">
     <div id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
       <img src="img/logo.png" alt="Logo of the Site" id="logo">
       <h1>
@@ -56,12 +57,12 @@
       </h3>
     </a>
   </header>
-  <main role="main">
-    <form action="get">
+  <main id="main_kl" role="main">
+    <form id="form_kl" action="get">
       <label for="Search">Search : </label>
-      <input type="text" placeholder="Filter" name="Search" id="">
-      <fieldset id="sidebar-list">
-        <legend>List</legend>
+      <input type="text" placeholder="Filter" name="Search" id="input_kl">
+      <fieldset id="sidebar-list_kl">
+        <legend class="legend_kl">List</legend>
         <ul>
           <li><a href="">All</a></li>
           <li><a href="">Watching</a></li>
@@ -69,11 +70,11 @@
           <li><a href="">Completed</a></li>
         </ul>
       </fieldset>
-      <fieldset id="k-filters">
-        <legend>Filters</legend>
+      <fieldset id="filters_kl">
+        <legend class="legend_kl">Filters</legend>
         <ul>
           <li>
-            <select name="Formate" id="">
+            <select name="Formate" class="select_kl">
               <option value="">Formate</option>
               <option value="TV">TV</option>
               <option value="TV_Short">TV Short</option>
@@ -85,7 +86,7 @@
             </select>
           </li>
           <li>
-            <select name="Status" id="">
+            <select name="Status" class="select_kl">
               <option value="">Status</option>
               <option value="Finished">Finished</option>
               <option value="Releasing">Releasing</option>
@@ -94,7 +95,7 @@
             </select>
           </li>
           <li>
-            <select name="Genres" id="">
+            <select name="Genres" class="select_kl">
               <option value="">Genres</option>
               <option value="Action">Action</option>
               <option value="Adventure">Adventure</option>
@@ -117,8 +118,8 @@
             </select>
           </li>
           <li>
-            <select name="Country" id="">
-              <option value="">Countrt</option>
+            <select name="Country" class="select_kl">
+              <option value="">Country</option>
               <option value="Japan">Japan</option>
               <option value="South_Korea">South_Korea</option>
               <option value="China">China</option>
@@ -126,62 +127,154 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>Year</legend>
+      <fieldset id="range_kl">
+        <legend class="legend_kl">Year</legend>
         <input type="range" min="0" max="100" value="0">
       </fieldset>
       <fieldset>
-        <legend>Sort</legend>
-        <select name="Sort" id="">
+        <legend class="legend_kl">Sort</legend>
+        <select name="Sort" class="select_kl">
           <option value="Title">Title</option>
           <option value="Score">Score</option>
           <option value="Progress">Progress</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+          <option value="Last_Updated">Last Updated</option>
+          <option value="Last_Added">Last Added</option>
+          <option value="Start_Date">Start Date</option>
+          <option value="Completed Date">Completed Date</option>
+          <option value="Release Date"></option>
           <option value=""></option>
           <option value=""></option>
         </select>
       </fieldset>
     </form>
-    <div id="reading">
-      <h3>Reading</h3>
-      <div class="card">
-        <div class="image-placeholder"></div>
-        <div class="card-title">1st</div>
-        <div class="card-subtitle">Score: 75</div>
-        <div class="card-text">Progress: 0/25</div>
-        <div class="card-text">Type: TV</div>
+    <div id="reading_kl">
+      <h3 class="h3_kl">Reading</h3>
+      <div class="card_heading_kl">
+        <div class="image-placeholder_kl">Image</div>
+        <div>Name</div>
+        <div class="card-subtitle_kl">Score</div>
+        <div class="card-text_kl">Progress</div>
+        <div class="card-text_kl">Type</div>
       </div>
-      <div class="card">
-        <div class="image-placeholder"></div>
-        <div class="card-title">2nd</div>
-        <div class="card-subtitle">Score: 75</div>
-        <div class="card-text">Progress: 0/25</div>
-        <div class="card-text">Type: TV</div>
+      <div class="card_kl">
+        <div class="image-placeholder_kl">
+          <img src="img/manga/attackontitan.jpg" alt="Attack On Titan">
+        </div>
+        <div class="card-title_kl">Attack On Titan</div>
+        <div class="card-subtitle_kl">75</div>
+        <div class="card-text_kl">8/15</div>
+        <div class="card-text_kl">TV</div>
       </div>
-      <div class="card">
-        <div class="image-placeholder"></div>
-        <div class="card-title">3rd</div>
-        <div class="card-subtitle">Score: 75</div>
-        <div class="card-text">Progress: 0/25</div>
-        <div class="card-text">Type: TV</div>
+      <div class="card_kl">
+        <div class="image-placeholder_kl">
+          <img src="img/manga/berserk.jpg" alt="Berserk">
+        </div>
+        <div class="card-title_kl">Berserk</div>
+        <div class="card-subtitle_kl">65</div>
+        <div class="card-text_kl">6/10</div>
+        <div class="card-text_kl">OVA</div>
       </div>
-      <div class="card">
-        <div class="image-placeholder"></div>
-        <div class="card-title">4th</div>
-        <div class="card-subtitle">Score: 75</div>
-        <div class="card-text">Progress: 0/25</div>
-        <div class="card-text">Type: TV</div>
+      <div class="card_kl">
+        <div class="image-placeholder_kl">
+          <img src="img/manga/chainsawman.png" alt="ChainSaw Man">
+        </div>
+        <div class="card-title_kl">ChainSaw Man</div>
+        <div class="card-subtitle_kl">85</div>
+        <div class="card-text_kl">10/25</div>
+        <div class="card-text_kl">TV Short</div>
       </div>
-      <div id="watching">
-        <h3>Watching</h3>
-        
+      <div class="card_kl">
+        <div class="image-placeholder_kl">
+          <img src="img/manga/fullmetal.png" alt="Full Mental">
+        </div>
+        <div class="card-title_kl">Full Mental</div>
+        <div class="card-subtitle_kl">70</div>
+        <div class="card-text_kl">4/5</div>
+        <div class="card-text_kl">Movie</div>
+      </div>
+      <div id="watching_kl">
+        <h3 class="h3_kl">Watching</h3>
+        <div class="container_kl">
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/demonslayer.jpg" alt="Demon slayer">
+              <div class="lower_kl">Demon slayer</div>
+            </div>
+          </div>
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/deathnote.jpg" alt="Death Note">
+              <div class="lower_kl">Death Note</div>
+            </div>
+          </div>
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/dandadan.jpg" alt="Dandadan">
+              <div class="lower_kl">Dandadan</div>
+            </div>
+          </div>
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/attackontitan.jpg" alt="Attack On Titan">
+              <div class="lower_kl">Attack on Titan</div>
+            </div>
+          </div>
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/dragonball.jpg" alt="Dragon Ball">
+              <div class="lower_kl">Dragon Ball</div>
+            </div>
+          </div>
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/frieren.jpg" alt="Frieren">
+              <div class="lower_kl">Frieren</div>
+            </div>
+          </div>
+          <div class="box_kl">
+            <div class="upper_kl">
+              <img src="img/anime/rezero.jpg" alt="Re:zero">
+              <div class="lower_kl">Re:Zero</div>
+            </div>
+          </div>
+        </div>
       </div>
   </main>
-  <footer></footer>
+  <footer>
+    <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W">
+    <h2 id="title_footer">AniTracker</h2>
+    <div id="group_members" class="flex flex-align-center flex-justify-center">
+      <span>Shivam Patel</span>
+      <span>Diksha Smotra</span>
+      <span>Krish Lavani</span>
+      <span>Neel Patel</span>
+      <span>Jasdeep Singh Dhillon</span>
+    </div>
+
+    <div id="references">
+      <h3>References</h3>
+      <ul>
+        <li>
+          <a href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
+          ">Get Responsive Background Image</a>
+        </li>
+        <li>
+          <a href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe">
+            Responsive Grid
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Conestoga College">Conestoga College</iframe>
+    <div id="footer_ds_id">
+      <h2>Join Us</h2>
+      <form class="subscribe-form_ds_class">
+        <input type="email" placeholder="Enter your email address">
+        <button>SUBSCRIBE</button>
+      </form>
+    </div>
+  </footer>
 </body>
 
 </html>

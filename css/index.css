@@ -1,4 +1,4 @@
-main {
+#jd-main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
@@ -11,19 +11,19 @@ main {
   gap: 1rem;
 }
 
-#hero {
+#jd-main #hero {
   grid-area: hero;
   background-image: url(../img/hero.jpg);
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   position: relative;
   height: 0;
   padding-top: 35%;
 }
 
-#hero::after {
+#jd-main #hero::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -34,42 +34,51 @@ main {
   z-index: -1;
 }
 
-#trending_anime {
+#jd-main #trending_anime {
   grid-area: animes;
   width: 100%;
   max-height: max-content;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
-#anime_list,
-#manga_list {
-  margin: 0.1rem;
+#jd-main #anime_list,
+#jd-main #manga_list {
   gap: 10px;
   flex-wrap: nowrap;
+  padding: .5rem;
 }
 
-#trending_manga {
+#jd-main #trending_manga {
   grid-area: mangas;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
-#review_section {
+#jd-main #trending_anime::-webkit-scrollbar, #jd-main #trending_manga::-webkit-scrollbar {
+  height: 22px;
+}
+
+#jd-main #trending_anime::-webkit-scrollbar-thumb, #jd-main #trending_manga::-webkit-scrollbar-thumb {
+  border: 8px solid var(--background);
+  border-radius: 3rem;
+}
+
+#jd-main #review_section {
   grid-area: reviews;
 }
 
-#site_updates {
+#jd-main #site_updates {
   grid-area: updates;
 }
 
-#user_posts {
+#jd-main #user_posts {
   grid-area: posts;
   max-height: 100%;
   overflow-y: scroll;
 }
 
-.anime,
-.manga {
+#jd-main .anime,
+#jd-main .manga {
   background-color: var(--card-background);
   width: 200px;
   height: 280px;
@@ -79,43 +88,43 @@ main {
   border: 2px solid var(--border-color);
 }
 
-.manga {
+#jd-main .manga {
   height: 320px;
 }
 
-.manga_img {
+#jd-main .manga_img {
   margin: auto;
 }
 
-.anime img,
-.manga img {
+#jd-main .anime img,
+#jd-main .manga img {
   border-radius: 0.5rem;
   max-width: 200px;
   align-items: center;
 }
 
-.anime h3,
-.manga h3 {
+#jd-main .anime h3,
+#jd-main .manga h3 {
   text-align: center;
   padding: 0.25rem;
   margin: 0.25rem;
 }
 
-.anime:hover,
-.manga:hover {
+#jd-main .anime:hover,
+#jd-main .manga:hover {
   width: 500px;
   transition: all 300ms;
-  box-shadow: 0px 0px 32px var(--secondary);
+  box-shadow: 0px 0px 10px var(--secondary);
 }
 
-.anime:hover .anime_details,
-.manga:hover .manga_details {
+#jd-main .anime:hover .anime_details,
+#jd-main .manga:hover .manga_details {
   transition: all 300ms;
   opacity: 1;
 }
 
-.anime_details,
-.manga_details {
+#jd-main .anime_details,
+#jd-main .manga_details {
   width: 200px;
   margin-left: 0.75rem;
   opacity: 0;
@@ -124,14 +133,14 @@ main {
   transition: all 300ms;
 }
 
-.anime_buttons,
-.manga_buttons {
+#jd-main .anime_buttons,
+#jd-main .manga_buttons {
   width: 200px;
   gap: 10px;
 }
 
-.watch,
-.read {
+#jd-main .watch,
+#jd-main .read {
   border-radius: 1rem;
   width: 90%;
   padding: 0.25rem 1rem;
@@ -141,7 +150,7 @@ main {
   color: var(--text);
 }
 
-.plan {
+#jd-main .plan {
   border-radius: 1rem;
   width: 90%;
   padding: 0.25rem 1rem;
@@ -151,40 +160,41 @@ main {
   color: var(--text);
 }
 
-.synopsis {
+#jd-main .synopsis {
   font-size: smaller;
-  overflow-y: scroll;
+  overflow-y: auto;
   margin-bottom: 0.75rem;
   color: var(--secondary-text);
 }
 
-.synopsis::-webkit-scrollbar {
-  display: none;
-  transition: all 300ms;
+#jd-main .synopsis::-webkit-scrollbar-thumb {
+  background: none;
+  transition: all 600ms;
 }
 
-.synopsis:hover::-webkit-scrollbar {
-  display: block;
-  transition: all 300ms;
+#jd-main .synopsis:hover::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border: 1px solid var(--card-background);
+  transition: all 600ms;
 }
 
-#posts {
+#jd-main #posts {
   gap: 10px;
   padding: 1rem;
 }
 
-.post {
+#jd-main .post {
   border: 1px var(--border-color) solid;
   border-radius: 1rem;
   padding: 1rem;
   background-color: var(--card-background);
   height: 125px;
 }
-.post h4 {
+#jd-main .post h4 {
   margin: 0.25rem;
 }
 
-.post span {
+#jd-main .post span {
   color: var(--secondary-text);
   font-size: small;
   margin: 0.25rem;
@@ -192,74 +202,73 @@ main {
   overflow-y: scroll;
 }
 
-.post span::-webkit-scrollbar {
+#jd-main .post span::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.post span:hover::-webkit-scrollbar {
+#jd-main .post span:hover::-webkit-scrollbar-thumb {
   display: block;
 }
 
-.post img {
+#jd-main .post img {
   max-height: 125px;
   border-radius: 0.75rem;
 }
 
-#site_updates div {
+#jd-main #site_updates div {
   width: 100%;
 }
 
-#reviews {
+#jd-main #reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-.review {
+#jd-main .review {
   background-color: var(--card-background);
   padding: 1rem;
   border-radius: 0.5rem;
-  /* box-shadow: 0px 0px 5px var(--card-shadow); */
   border: 1px solid var(--border-color);
 }
 
-.review img {
+#jd-main .review img {
   max-width: 100%;
   max-height: 150px;
   margin: auto;
   border-radius: 0.25rem;
 }
 
-.review h4 {
+#jd-main .review h4 {
   margin: 0.5rem 0;
 }
 
-.review span {
+#jd-main .review span {
   color: var(--secondary-text);
   font-size: small;
 }
 
-.icons {
+#jd-main .icons {
   justify-content: end;
   gap: 20px;
   margin-top: 1rem;
 }
 
-.icons .flex {
+#jd-main .icons .flex {
   transition: all 300ms;
 }
 
-.icons .flex:hover {
+#jd-main .icons .flex:hover {
   transform: scale(1.2);
   transition: all 300ms;
 }
 
-.icons img {
+#jd-main .icons img {
   max-width: 16px;
   margin-right: 4px;
 }
 
-.update {
+#jd-main .update {
   background-color: var(--card-background);
   border-radius: 1rem;
   border: 1px solid var(--border-color);
@@ -270,7 +279,7 @@ main {
   margin: 1rem 1rem 1rem 0rem;
 }
 
-.update_logo {
+#jd-main .update_logo {
   max-width: 30px;
   padding: .5rem;
   margin: .5rem 1rem 0rem 1rem;
@@ -278,28 +287,25 @@ main {
   grid-area: img;
 }
 
-.update .title {
+#jd-main .update .title {
   grid-area: title;
   margin: .5rem 1rem 0rem 1rem;
 }
 
-.update .time {
+#jd-main .update .time {
   margin: .5rem 1rem 0rem 1rem;
   color: var(--secondary-text);
   font-size: x-small;
 }
 
-.update .changelog {
+#jd-main .update .changelog {
   grid-area: changelog;
 }
 
-footer {
-  margin: 2rem;
-}
 
 /* Change Hero background Image in media query */
 @media screen and (max-width: 1100px) {
-  main {
+  #jd-main {
     grid-template-columns: 1fr;
     grid-template-areas:
       "hero"
@@ -310,13 +316,13 @@ footer {
       "updates";
   }
 
-  #posts {
+  #jd-main #posts {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #reviews {
+  #jd-main #reviews {
     grid-template-columns: 1fr;
   }
 }
