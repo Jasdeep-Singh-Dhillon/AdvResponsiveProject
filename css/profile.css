@@ -11,12 +11,7 @@ body {
   padding: 20px;
   display: flex;
   align-items: center;
-
-  display: flex;
-  align-items: center;
-  padding: 10px;
   margin: 20px auto;
-
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -37,8 +32,8 @@ body {
 }
 
 .pro-profile img {
-  height: 200px;
-  width: 160px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .pro-username {
@@ -53,6 +48,7 @@ body {
   align-items: center;
   background-color: var(--card-background);
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .pro-nav ul {
@@ -61,6 +57,10 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.pro-container h2 {
+  text-align: center;
 }
 
 .pro-nav a {
@@ -111,6 +111,10 @@ body {
   background-color: white;
   margin: 0px 4px 4px 0px;
   border-radius: 1px;
+}
+
+.pro-activity-block:hover {
+  background-color: var(--background) !important;
 }
 
 .pro-activity-block-field {
@@ -303,6 +307,14 @@ body {
   margin: 10px auto;
   background-color: var(--card-background);
   box-shadow: 0px 0px 8px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.pro-top-anime-card:hover,
+.pro-top-manga-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px var(--primary);
 }
 
 .pro-top-anime-card img,
@@ -331,6 +343,13 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   min-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.pro-activity-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 8px var(--primary);
 }
 
 .pro-activity-card-img {
@@ -369,7 +388,8 @@ body {
   }
 
   .pro-nav ul {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
 
