@@ -1,0 +1,431 @@
+.my_body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "hero hero"
+    "main sidebar"
+    "footer footer";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  /* background: linear-gradient(to bottom, #de0a26, #000); */
+  color: white;
+  width: 99vw;
+  margin: auto;
+}
+
+.my_body header {
+  grid-area: header;
+}
+
+.header_top {
+  grid-area: hero;
+  height: 400px;
+  background: url("../img/wall.jpg") no-repeat center center/cover;
+  text-align: center;
+  /* padding: 2rem; */
+  margin: .75rem;
+  /* padding: 15px; */
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+}
+
+.header_top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  z-index: 1;
+}
+
+.banner-content_ds_class {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+  color: white;
+}
+
+.banner-content_ds_class h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.banner-content_ds_class p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.main-container {
+  grid-area: main;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: linear-gradient(to bottom, black, #c63f72);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.latest-release,
+.recommendations,
+.upcoming {
+  background: linear-gradient(to bottom, #000, #c63f72);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.search-form_ds_class {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-form_ds_class select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #c63f72;
+  border-radius: 5px;
+  background: #000;
+  color: white;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.search-form_ds_class select:hover {
+  border-color: white;
+  transform: scale(1.02);
+}
+
+.tabs_ds_class button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border: 2px solid #c63f72;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tabs_ds_class button:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+.search-anime_ds_class {
+  background: linear-gradient(to bottom, #c63f72, black);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.search-anime_ds_class h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.search-anime_ds_class form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-anime_ds_class select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #c63f72;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  outline: none;
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.search-anime_ds_class select:hover {
+  border-color: white;
+  transform: scale(1.02);
+  background-color: #c63f72;
+  color: black;
+}
+
+.search-anime_ds_class select:focus {
+  border-color: white;
+  background-color: #c63f72;
+  color: black;
+}
+
+.genres_ds_class ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.genres_ds_class li {
+  border: 2px solid #c63f72;
+  background: black;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.genres_ds_class li:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+.latest-release-content {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.latest-release-content img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.latest-release-content img:hover {
+  transform: scale(1.1);
+}
+
+.recommendation-grid,
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card_ds_class {
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card_ds_class:hover {
+  transform: translateY(-10px);
+  background: #c63f72;
+}
+
+.card_ds_class img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card_ds_class h3 {
+  margin: 10px 0 5px;
+}
+
+.card_ds_class p {
+  font-size: 0.9rem;
+  margin: 5px 0 15px;
+}
+
+.card_ds_class button {
+  background: #c63f72;
+  color: white;
+  border: 2px solid #c1b492;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card_ds_class button:hover {
+  background: black;
+}
+
+.my_body footer {
+  grid-area: footer;
+  color: var(--text);
+  background: linear-gradient(to bottom, #c63f72, #571931);
+}
+
+.my_body #references a {
+  color: var(--text);
+}
+
+.subscribe-form_ds_class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe-form_ds_class input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #c63f72;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  outline: none;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-form_ds_class input:hover,
+.subscribe-form_ds_class input:focus {
+  border-color: white;
+  transform: scale(1.02);
+}
+
+.subscribe-form_ds_class button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background: #c63f72;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-form_ds_class button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .my_body {
+    grid-template-areas:
+      "header"
+      "hero"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+.anime-tabs {
+  background: linear-gradient(to bottom, #c63f72, #181414);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+}
+
+.anime-tabs h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: #c63f72;
+  margin: 10px;
+  width: 100%;
+  color: white;
+  border: 2px solid #c1b492;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tab-button:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+.tab-button.active {
+  background: black;
+  transform: scale(1.1);
+}
+
+.tabs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.tab-content {
+  display: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-anime-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tab-anime-image:hover {
+  transform: scale(1.1);
+}

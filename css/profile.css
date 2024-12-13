@@ -76,7 +76,7 @@ body {
 }
 
 .pro-nav a:hover {
-  background-color: var(--primary);
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
   color: #fff;
 }
 
