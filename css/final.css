@@ -152,8 +152,8 @@ footer {
   font-family: "Inter", sans-serif;
   color: var(--text);
   border: 1px solid var(--border-color);
-  border-radius: .5rem .5rem;
-  margin-left: .5rem;
+  border-radius: 0.5rem 0.5rem;
+  margin-left: 0.5rem;
 }
 
 #logo_footer {
@@ -246,9 +246,8 @@ footer {
   transform: scale(1.05);
 }
 
-
 .my_body footer button {
-    background: #c63f72;
+  background: #c63f72;
 }
 
 @media screen and (max-width: 1100px) {
@@ -286,6 +285,15 @@ footer {
 
   #title_footer {
     justify-self: center;
+  }
+
+  .trending,
+  .popular-grid {
+    justify-content: center;
+  }
+
+  .anime-details {
+    display: none;
   }
 }
 
@@ -691,6 +699,10 @@ footer {
 @media screen and (max-width: 700px) {
   #jd-main #reviews {
     grid-template-columns: 1fr;
+  }
+
+  #logo_footer {
+    justify-self: center;
   }
 }
 
@@ -1745,6 +1757,14 @@ footer {
     grid-column: 1;
     grid-row: 4;
   }
+
+  .pro-activity-card {
+    min-width: fit-content;
+  }
+
+  /* #map {
+    justify-self: center;
+  } */
 }
 
 @media screen and (max-width: 700px) {
@@ -1827,6 +1847,7 @@ footer {
 .basic-filters {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -2080,6 +2101,7 @@ input[type="range"] {
   display: flex;
   gap: 8px;
   margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 .anime-tag {

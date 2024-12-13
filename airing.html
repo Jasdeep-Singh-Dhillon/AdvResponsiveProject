@@ -1,604 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arriving_Page" />
+    <title>Arriving Soon</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/final.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Arriving_Page">
-  <title>Arriving Soon</title>
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/final.css">
-</head>
-
-<body>
-  <header class="flex flex-align-center"  role="heading" aria-level="1">
-    <a href="index.html" id="site_title" class="flex flex-align-center">
-      <img src="img/logo.png" alt="Logo of the Site" id="logo">
-      <h1>
-        AniTracker
-      </h1>
-    </a>
-    <nav role="navigation" aria-label="navigation">
-      <ul class="flex flex-align-center">
-        <li>
-          <a href="index.html">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="watch.html">
-            Watch
-          </a>
-        </li>
-        <li>
-          <a href="airing.html" id="current">
-            Airing
-          </a>
-        </li>
-        <li>
-          <a href="list.html">
-            List
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <a id="account_icon" class="flex flex-align-center" href="profile.html">
-      <img src="img/profile.png" alt="Profile Icon">
-      <h3>
-        Arc
-      </h3>
-    </a>
-  </header>
-  <main role="main">
-    <div class="filter-section">
+  <body>
+    <header class="flex flex-align-center" role="heading" aria-level="1">
+      <a href="index.html" id="site_title" class="flex flex-align-center">
+        <img src="img/logo.png" alt="Logo of the Site" id="logo" />
+        <h1>AniTracker</h1>
+      </a>
+      <nav role="navigation" aria-label="navigation">
+        <ul class="flex flex-align-center">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="watch.html"> Watch </a>
+          </li>
+          <li>
+            <a href="airing.html" id="current"> Airing </a>
+          </li>
+          <li>
+            <a href="list.html"> List </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <a id="account_icon" class="flex flex-align-center" href="profile.html">
+        <img src="img/profile.png" alt="Profile Icon" />
+        <h3>Arc</h3>
+      </a>
+    </header>
+    <main role="main">
+      <div class="filter-section">
         <!-- Basic Filters -->
         <div class="basic-filters">
-            <div class="filter-item">
-                <label for="search">Search</label>
-                <input type="text" id="search" placeholder="🔍 Search">
-            </div>
-            <div class="filter-item">
-                <label for="genres">Genres</label>
-                <select id="genres">
-                    <option value="">Any</option>
-                    <option value="action">Action</option>
-                    <option value="comedy">Comedy</option>
-                    <option value="drama">Drama</option>
-                </select>
-            </div>
-            <div class="filter-item">
-                <label for="year">Year</label>
-                <select id="year">
-                    <option value="">Any</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                </select>
-            </div>
-            <div class="filter-item">
-                <label for="season">Season</label>
-                <select id="season">
-                    <option value="">Any</option>
-                    <option value="winter">Winter</option>
-                    <option value="spring">Spring</option>
-                </select>
-            </div>
-            <div class="filter-item">
-                <label for="format">Format</label>
-                <select id="format">
-                    <option value="">Any</option>
-                    <option value="tv">TV Show</option>
-                    <option value="movie">Movie</option>
-                </select>
-            </div>
-            <!-- Dropdown menu for advanced filters -->
-            <div class="dropdown">
-                <button class="dropdown-button">Advanced Filters ▾</button>
-                <div class="dropdown-content">
-                    <div class="slider-section">
-                        <label for="year-range">Year Range</label>
-                        <input type="range" id="year-range" min="2000" max="2024">
-                    </div>
-                    <div class="slider-section">
-                        <label for="episodes">Episodes</label>
-                        <input type="range" id="episodes" min="1" max="100">
-                    </div>
-                    <div class="slider-section">
-                        <label for="duration">Duration</label>
-                        <input type="range" id="duration" min="10" max="200">
-                    </div>
-                    <label>
-                        <input type="checkbox"> Doujin
-                    </label>
-                    <hr>
-                    <div class="tag-section">
-                        <label>Genres</label>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Adventure</span>
-                            <span class="tag">Comedy</span>
-                            <span class="tag">Drama</span>
-                            <span class="tag">Fantasy</span>
-                            <span class="tag">Horror</span>
-                            <span class="tag">Sci-Fi</span>
-                            <span class="tag">Slice of Life</span>
-                        </div>
-                    </div>
-                    <div class="tag-section">
-                        <label>Cast / Main Cast</label>
-                        <div class="tags">
-                            <span class="tag">Anti-Hero</span>
-                            <span class="tag">Female Protagonist</span>
-                            <span class="tag">Male Protagonist</span>
-                            <span class="tag">Primarily Teen Cast</span>
-                        </div>
-                    </div>
-                    <div class="tag-section">
-                        <label>Theme / Drama</label>
-                        <div class="tags">
-                            <span class="tag">Class Struggle</span>
-                            <span class="tag">Revenge</span>
-                            <span class="tag">Tragedy</span>
-                            <span class="tag">Suicide</span>
-                        </div>
-                    </div>
+          <div class="filter-item">
+            <label for="search">Search</label>
+            <input type="text" id="search" placeholder="🔍 Search" />
+          </div>
+          <div class="filter-item">
+            <label for="genres">Genres</label>
+            <select id="genres">
+              <option value="">Any</option>
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+            </select>
+          </div>
+          <div class="filter-item">
+            <label for="year">Year</label>
+            <select id="year">
+              <option value="">Any</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+          <div class="filter-item">
+            <label for="season">Season</label>
+            <select id="season">
+              <option value="">Any</option>
+              <option value="winter">Winter</option>
+              <option value="spring">Spring</option>
+            </select>
+          </div>
+          <div class="filter-item">
+            <label for="format">Format</label>
+            <select id="format">
+              <option value="">Any</option>
+              <option value="tv">TV Show</option>
+              <option value="movie">Movie</option>
+            </select>
+          </div>
+          <!-- Dropdown menu for advanced filters -->
+          <div class="dropdown">
+            <button class="dropdown-button">Advanced Filters ▾</button>
+            <div class="dropdown-content">
+              <div class="slider-section">
+                <label for="year-range">Year Range</label>
+                <input type="range" id="year-range" min="2000" max="2024" />
+              </div>
+              <div class="slider-section">
+                <label for="episodes">Episodes</label>
+                <input type="range" id="episodes" min="1" max="100" />
+              </div>
+              <div class="slider-section">
+                <label for="duration">Duration</label>
+                <input type="range" id="duration" min="10" max="200" />
+              </div>
+              <label> <input type="checkbox" /> Doujin </label>
+              <hr />
+              <div class="tag-section">
+                <label>Genres</label>
+                <div class="tags">
+                  <span class="tag">Action</span>
+                  <span class="tag">Adventure</span>
+                  <span class="tag">Comedy</span>
+                  <span class="tag">Drama</span>
+                  <span class="tag">Fantasy</span>
+                  <span class="tag">Horror</span>
+                  <span class="tag">Sci-Fi</span>
+                  <span class="tag">Slice of Life</span>
                 </div>
+              </div>
+              <div class="tag-section">
+                <label>Cast / Main Cast</label>
+                <div class="tags">
+                  <span class="tag">Anti-Hero</span>
+                  <span class="tag">Female Protagonist</span>
+                  <span class="tag">Male Protagonist</span>
+                  <span class="tag">Primarily Teen Cast</span>
+                </div>
+              </div>
+              <div class="tag-section">
+                <label>Theme / Drama</label>
+                <div class="tags">
+                  <span class="tag">Class Struggle</span>
+                  <span class="tag">Revenge</span>
+                  <span class="tag">Tragedy</span>
+                  <span class="tag">Suicide</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    
-    
-        <div class="section">
-            <h2>Trending Now</h2>
-            <div class="trending">
-                <div class="card">
-                    <img src="img/k on.png" alt="Anime 1">
-                    <div class="info">
-                        <h3>Dandadan</h3>
-                        <p>Ep 11 airing in 23 hours</p>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Comedy</span>
-                            <span class="tag">Drama</span>
-                        </div>
-                    </div>
-                    <div class="hover-details">
-                        <h3>Dandadan</h3>
-                        <p>Science SARU • TV Show • 12 episodes</p>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Comedy</span>
-                            <span class="tag">Drama</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/jujustu 0.jpg" alt="Anime 2">
-                    <div class="info">
-                        <h3>One Piece</h3>
-                        <p>Ep 1070 airing in 3 days</p>
-                        <div class="tags">
-                            <span class="tag">Adventure</span>
-                            <span class="tag">Fantasy</span>
-                        </div>
-                    </div>
-                    <div class="hover-details">
-                        <h3>One Piece</h3>
-                        <p>Toei Animation • TV Show • Ongoing</p>
-                        <div class="tags">
-                            <span class="tag">Adventure</span>
-                            <span class="tag">Fantasy</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/one punch.jpg" alt="Anime 3">
-                    <div class="info">
-                        <h3>Rekishi ni Nokoru Akujo ni Naruzo</h3>
-                        <p>Ep 1 airing in 2 days</p>
-                        <div class="tags">
-                            <span class="tag">Romance</span>
-                            <span class="tag">Drama</span>
-                        </div>
-                    </div>
-                    <div class="hover-details">
-                        <h3>Rekishi ni Nokoru Akujo ni Naruzo</h3>
-                        <p>Studio Name • TV Show • 1 episode</p>
-                        <div class="tags">
-                            <span class="tag">Romance</span>
-                            <span class="tag">Drama</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/wind.jpg" alt="Anime 4">
-                    <div class="info">
-                        <h3>Amagami-san Chi no Enmusubi</h3>
-                        <p>Ep 2 airing in 5 days</p>
-                        <div class="tags">
-                            <span class="tag">Slice of Life</span>
-                            <span class="tag">Comedy</span>
-                        </div>
-                    </div>
-                    <div class="hover-details">
-                        <h3>Amagami-san Chi no Enmusubi</h3>
-                        <p>Studio Name • TV Show • 2 episodes</p>
-                        <div class="tags">
-                            <span class="tag">Slice of Life</span>
-                            <span class="tag">Comedy</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/gitami.jpg" alt="Anime 5">
-                    <div class="info">
-                        <h3>BLEACH: Sennen Kessen-hen</h3>
-                        <p>Ep 23 airing in 1 day</p>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Fantasy</span>
-                        </div>
-                    </div>
-                    <div class="hover-details">
-                        <h3>BLEACH: Sennen Kessen-hen</h3>
-                        <p>Studio Name • TV Show • Ongoing</p>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Fantasy</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/saga.jpg" alt="Anime 6">
-                    <div class="info">
-                        <h3>Jujutsu Kaisen</h3>
-                        <p>Ep 22 airing in 6 days</p>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Supernatural</span>
-                        </div>
-                    </div>
-                    <div class="hover-details">
-                        <h3>Jujutsu Kaisen</h3>
-                        <p>MAPPA • TV Show • Ongoing</p>
-                        <div class="tags">
-                            <span class="tag">Action</span>
-                            <span class="tag">Supernatural</span>
-                        </div>
-                    </div>
-                </div>
-               
+      </div>
+
+      <div class="section">
+        <h2>Trending Now</h2>
+        <div class="trending">
+          <div class="card">
+            <img src="img/k on.png" alt="Anime 1" />
+            <div class="info">
+              <h3>Dandadan</h3>
+              <p>Ep 11 airing in 23 hours</p>
+              <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Comedy</span>
+                <span class="tag">Drama</span>
+              </div>
             </div>
+            <div class="hover-details">
+              <h3>Dandadan</h3>
+              <p>Science SARU • TV Show • 12 episodes</p>
+              <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Comedy</span>
+                <span class="tag">Drama</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/jujustu 0.jpg" alt="Anime 2" />
+            <div class="info">
+              <h3>One Piece</h3>
+              <p>Ep 1070 airing in 3 days</p>
+              <div class="tags">
+                <span class="tag">Adventure</span>
+                <span class="tag">Fantasy</span>
+              </div>
+            </div>
+            <div class="hover-details">
+              <h3>One Piece</h3>
+              <p>Toei Animation • TV Show • Ongoing</p>
+              <div class="tags">
+                <span class="tag">Adventure</span>
+                <span class="tag">Fantasy</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/one punch.jpg" alt="Anime 3" />
+            <div class="info">
+              <h3>Rekishi ni Nokoru Akujo ni Naruzo</h3>
+              <p>Ep 1 airing in 2 days</p>
+              <div class="tags">
+                <span class="tag">Romance</span>
+                <span class="tag">Drama</span>
+              </div>
+            </div>
+            <div class="hover-details">
+              <h3>Rekishi ni Nokoru Akujo ni Naruzo</h3>
+              <p>Studio Name • TV Show • 1 episode</p>
+              <div class="tags">
+                <span class="tag">Romance</span>
+                <span class="tag">Drama</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/wind.jpg" alt="Anime 4" />
+            <div class="info">
+              <h3>Amagami-san Chi no Enmusubi</h3>
+              <p>Ep 2 airing in 5 days</p>
+              <div class="tags">
+                <span class="tag">Slice of Life</span>
+                <span class="tag">Comedy</span>
+              </div>
+            </div>
+            <div class="hover-details">
+              <h3>Amagami-san Chi no Enmusubi</h3>
+              <p>Studio Name • TV Show • 2 episodes</p>
+              <div class="tags">
+                <span class="tag">Slice of Life</span>
+                <span class="tag">Comedy</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/gitami.jpg" alt="Anime 5" />
+            <div class="info">
+              <h3>BLEACH: Sennen Kessen-hen</h3>
+              <p>Ep 23 airing in 1 day</p>
+              <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Fantasy</span>
+              </div>
+            </div>
+            <div class="hover-details">
+              <h3>BLEACH: Sennen Kessen-hen</h3>
+              <p>Studio Name • TV Show • Ongoing</p>
+              <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Fantasy</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/saga.jpg" alt="Anime 6" />
+            <div class="info">
+              <h3>Jujutsu Kaisen</h3>
+              <p>Ep 22 airing in 6 days</p>
+              <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Supernatural</span>
+              </div>
+            </div>
+            <div class="hover-details">
+              <h3>Jujutsu Kaisen</h3>
+              <p>MAPPA • TV Show • Ongoing</p>
+              <div class="tags">
+                <span class="tag">Action</span>
+                <span class="tag">Supernatural</span>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
+
       <div class="popular-section">
         <h2>Popular This Season</h2>
         <div class="popular-grid">
-            <!-- Card 1 -->
-            <div class="popular-card">
-                <img src="img/Kinokoinu.jpg" alt="Amagami-san Chi no Enmusubi">
-                <div class="card-info">
-                    <h3>Amagami-san Chi no Enmusubi</h3>
-                    <p>Ep 8 airing in 2 days</p>
-                    <p>Rating: 85%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Amagami-san Chi no Enmusubi</h3>
-                    <p>Slice of life • Comedy • Romance</p>
-                    <p>Studio: CloverWorks</p>
-                    <p>New episodes weekly</p>
-                </div>
+          <!-- Card 1 -->
+          <div class="popular-card">
+            <img src="img/Kinokoinu.jpg" alt="Amagami-san Chi no Enmusubi" />
+            <div class="card-info">
+              <h3>Amagami-san Chi no Enmusubi</h3>
+              <p>Ep 8 airing in 2 days</p>
+              <p>Rating: 85%</p>
             </div>
-            <!-- Card 2 -->
-            <div class="popular-card">
-                <img src="img/Maou-sama, Retry! R.jpg" alt="Bleach: Thousand-Year Blood War">
-                <div class="card-info">
-                    <h3>Bleach: Thousand-Year Blood War</h3>
-                    <p>Ep 11 airing in 6 days</p>
-                    <p>Rating: 88%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Bleach: Thousand-Year Blood War</h3>
-                    <p>Action • Adventure • Supernatural</p>
-                    <p>Studio: Pierrot</p>
-                    <p>New episodes bi-weekly</p>
-                </div>
+            <div class="card-hover-details">
+              <h3>Amagami-san Chi no Enmusubi</h3>
+              <p>Slice of life • Comedy • Romance</p>
+              <p>Studio: CloverWorks</p>
+              <p>New episodes weekly</p>
             </div>
-            <!-- Card 3 -->
-            <div class="popular-card">
-                <img src="img/cursed_sasuke_.jpg" alt="Blue Lock Season 2">
-                <div class="card-info">
-                    <h3>Blue Lock Season 2</h3>
-                    <p>Ep 8 airing in 14 hours</p>
-                    <p>Rating: 77%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Blue Lock Season 2</h3>
-                    <p>Sports • Drama • Action</p>
-                    <p>Studio: 8bit</p>
-                    <p>New episodes weekly</p>
-                </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="popular-card">
+            <img
+              src="img/Maou-sama, Retry! R.jpg"
+              alt="Bleach: Thousand-Year Blood War"
+            />
+            <div class="card-info">
+              <h3>Bleach: Thousand-Year Blood War</h3>
+              <p>Ep 11 airing in 6 days</p>
+              <p>Rating: 88%</p>
             </div>
-            <!-- Card 4 -->
-            <div class="popular-card">
-                <img src="img/wp4916214.jpg"alt=" Frontier Season 2">
-                <div class="card-info">
-                    <h3>Shangri-La Frontier Season 2</h3>
-                    <p>Ep 7 airing in 1 day</p>
-                    <p>Rating: 79%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Shangri-La Frontier Season 2</h3>
-                    <p>Action • Adventure • Fantasy</p>
-                    <p>Studio: C2C</p>
-                    <p>Dive into a vast virtual world</p>
-                </div>
+            <div class="card-hover-details">
+              <h3>Bleach: Thousand-Year Blood War</h3>
+              <p>Action • Adventure • Supernatural</p>
+              <p>Studio: Pierrot</p>
+              <p>New episodes bi-weekly</p>
             </div>
-            <!-- Card 5 -->
-            <div class="popular-card">
-                <img src="img/Raise wa Tanin ga Ii.jpg" alt="Re:ZERO -Starting Life in Another World- Season 3">
-                <div class="card-info">
-                    <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
-                    <p>Ep 16 airing on October 2</p>
-                    <p>Rating: 86%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
-                    <p>Adventure • Drama • Fantasy</p>
-                    <p>Studio: White Fox</p>
-                    <p>A journey of survival and love</p>
-                </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="popular-card">
+            <img src="img/cursed_sasuke_.jpg" alt="Blue Lock Season 2" />
+            <div class="card-info">
+              <h3>Blue Lock Season 2</h3>
+              <p>Ep 8 airing in 14 hours</p>
+              <p>Rating: 77%</p>
             </div>
-            <!-- Card 6 -->
-            <div class="popular-card">
-                <img src="img/Uzumaki.png" alt="Uzumaki">
-                <div class="card-info">
-                    <h3>Uzumaki</h3>
-                    <p>Ep 4 aired on September 29</p>
-                    <p>Rating: 57%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Uzumaki</h3>
-                    <p>Horror • Drama</p>
-                    <p>Studio: Akatsuki, Fugaku</p>
-                    <p>A small town plagued by spirals</p>
-                </div>
+            <div class="card-hover-details">
+              <h3>Blue Lock Season 2</h3>
+              <p>Sports • Drama • Action</p>
+              <p>Studio: 8bit</p>
+              <p>New episodes weekly</p>
             </div>
-            <!-- Card 7 -->
-            <div class="popular-card">
-                <img src="img/Ao no Miburo.jpg"Seirei Gensouki: Spirit Chronicles Season 2">
-                <div class="card-info">
-                    <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
-                    <p>Ep 8 airing in 2 days</p>
-                    <p>Rating: 70%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
-                    <p>Adventure • Romance • Fantasy</p>
-                    <p>Studio: TMS Entertainment, WAO</p>
-                    <p>A young man’s journey of magic</p>
-                </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="popular-card">
+            <img src="img/wp4916214.jpg" alt=" Frontier Season 2" />
+            <div class="card-info">
+              <h3>Shangri-La Frontier Season 2</h3>
+              <p>Ep 7 airing in 1 day</p>
+              <p>Rating: 79%</p>
             </div>
-            <!-- Card 8 -->
-            <div class="popular-card">
-                <img src="img/Blue Lock VS. U-20 JAPAN.png" alt="Dan Da Dan">
-                <div class="card-info">
-                    <h3>Dan Da Dan</h3>
-                    <p>Ep 9 of 12 airing in 5 days</p>
-                    <p>Rating: 85%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Dan Da Dan</h3>
-                    <p>Action • Comedy</p>
-                    <p>Studio: Science SARU</p>
-                    <p>A thrilling tale of friendship</p>
-                </div>
+            <div class="card-hover-details">
+              <h3>Shangri-La Frontier Season 2</h3>
+              <p>Action • Adventure • Fantasy</p>
+              <p>Studio: C2C</p>
+              <p>Dive into a vast virtual world</p>
             </div>
-            <!-- Card 9 -->
-            <div class="popular-card">
-                <img src="img/BLEACHSennen Kessen-hen - Soukoku-tan.jpg" alt="Arifureta: From Commonplace to World’s Strongest Season 3">
-                <div class="card-info">
-                    <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
-                    <p>Ep 7 airing in 2 days</p>
-                    <p>Rating: 73%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
-                    <p>Action • Adventure • Fantasy</p>
-                    <p>Studio: Asread</p>
-                    <p>A hero’s fight to protect his world</p>
-                </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="popular-card">
+            <img
+              src="img/Raise wa Tanin ga Ii.jpg"
+              alt="Re:ZERO -Starting Life in Another World- Season 3"
+            />
+            <div class="card-info">
+              <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
+              <p>Ep 16 airing on October 2</p>
+              <p>Rating: 86%</p>
             </div>
-            <!-- Card 10 -->
-            <div class="popular-card">
-                <img src="img/5-Oku-nen Button Part 2.jpg"alt="Dragon Ball Z">
-                <div class="card-info">
-                    <h3>Dragon Ball Z</h3>
-                    <p>Ep 8 airing in 6 days</p>
-                    <p>Rating: 77%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Dragon Ball Z</h3>
-                    <p>Action • Adventure • Supernatural</p>
-                    <p>Studio: Toei Animation</p>
-                    <p>A legendary warrior’s saga continues</p>
-                </div>
+            <div class="card-hover-details">
+              <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
+              <p>Adventure • Drama • Fantasy</p>
+              <p>Studio: White Fox</p>
+              <p>A journey of survival and love</p>
             </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="popular-card">
+            <img src="img/Uzumaki.png" alt="Uzumaki" />
+            <div class="card-info">
+              <h3>Uzumaki</h3>
+              <p>Ep 4 aired on September 29</p>
+              <p>Rating: 57%</p>
+            </div>
+            <div class="card-hover-details">
+              <h3>Uzumaki</h3>
+              <p>Horror • Drama</p>
+              <p>Studio: Akatsuki, Fugaku</p>
+              <p>A small town plagued by spirals</p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="popular-card">
+            <img src="img/Ao no Miburo.jpg"Seirei Gensouki: Spirit Chronicles
+            Season 2">
+            <div class="card-info">
+              <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
+              <p>Ep 8 airing in 2 days</p>
+              <p>Rating: 70%</p>
+            </div>
+            <div class="card-hover-details">
+              <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
+              <p>Adventure • Romance • Fantasy</p>
+              <p>Studio: TMS Entertainment, WAO</p>
+              <p>A young man’s journey of magic</p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="popular-card">
+            <img src="img/Blue Lock VS. U-20 JAPAN.png" alt="Dan Da Dan" />
+            <div class="card-info">
+              <h3>Dan Da Dan</h3>
+              <p>Ep 9 of 12 airing in 5 days</p>
+              <p>Rating: 85%</p>
+            </div>
+            <div class="card-hover-details">
+              <h3>Dan Da Dan</h3>
+              <p>Action • Comedy</p>
+              <p>Studio: Science SARU</p>
+              <p>A thrilling tale of friendship</p>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="popular-card">
+            <img
+              src="img/BLEACHSennen Kessen-hen - Soukoku-tan.jpg"
+              alt="Arifureta: From Commonplace to World’s Strongest Season 3"
+            />
+            <div class="card-info">
+              <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
+              <p>Ep 7 airing in 2 days</p>
+              <p>Rating: 73%</p>
+            </div>
+            <div class="card-hover-details">
+              <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
+              <p>Action • Adventure • Fantasy</p>
+              <p>Studio: Asread</p>
+              <p>A hero’s fight to protect his world</p>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="popular-card">
+            <img src="img/5-Oku-nen Button Part 2.jpg" alt="Dragon Ball Z" />
+            <div class="card-info">
+              <h3>Dragon Ball Z</h3>
+              <p>Ep 8 airing in 6 days</p>
+              <p>Rating: 77%</p>
+            </div>
+            <div class="card-hover-details">
+              <h3>Dragon Ball Z</h3>
+              <p>Action • Adventure • Supernatural</p>
+              <p>Studio: Toei Animation</p>
+              <p>A legendary warrior’s saga continues</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="top-anime-section">
+      </div>
+      <div class="top-anime-section">
         <h2>Top 100 Anime</h2>
         <div class="top-anime-list">
-            <!-- Anime Card 1 -->
-            <div class="top-anime-card">
-                <div class="anime-rank">#1</div>
-                <div class="anime-info">
-                    <div class="anime-title">Sousou no Frieren</div>
-                    <div class="anime-tags">
-                        <span class="anime-tag">Adventure</span>
-                        <span class="anime-tag">Drama</span>
-                        <span class="anime-tag">Fantasy</span>
-                    </div>
-                    <div class="anime-meta">
-                        <span class="anime-type">TV Show</span> • 
-                        <span class="anime-season">Fall 2023</span> • 
-                        <span class="anime-episodes">28 episodes</span> • 
-                        <span class="anime-status">Finished</span>
-                    </div>
-                </div>
-                <div class="anime-details">
-                    <div class="anime-rating">
-                        <span>91%</span>
-                    </div>
-                    <div class="anime-users">246,574 users</div>
-                </div>
+          <!-- Anime Card 1 -->
+          <div class="top-anime-card">
+            <div class="anime-rank">#1</div>
+            <div class="anime-info">
+              <div class="anime-title">Sousou no Frieren</div>
+              <div class="anime-tags">
+                <span class="anime-tag">Adventure</span>
+                <span class="anime-tag">Drama</span>
+                <span class="anime-tag">Fantasy</span>
+              </div>
+              <div class="anime-meta">
+                <span class="anime-type">TV Show</span> •
+                <span class="anime-season">Fall 2023</span> •
+                <span class="anime-episodes">28 episodes</span> •
+                <span class="anime-status">Finished</span>
+              </div>
             </div>
-    
-            <!-- Anime Card 2 -->
-            <div class="top-anime-card">
-                <div class="anime-rank">#2</div>
-                <div class="anime-info">
-                    <div class="anime-title">Gintama: THE FINAL</div>
-                    <div class="anime-tags">
-                        <span class="anime-tag">Action</span>
-                        <span class="anime-tag">Comedy</span>
-                        <span class="anime-tag">Drama</span>
-                    </div>
-                    <div class="anime-meta">
-                        <span class="anime-type">Movie</span> • 
-                        <span class="anime-season">Winter 2021</span> • 
-                        <span class="anime-duration">1 hour, 44 mins</span> • 
-                        <span class="anime-status">Finished</span>
-                    </div>
-                </div>
-                <div class="anime-details">
-                    <div class="anime-rating">
-                        <span>91%</span>
-                    </div>
-                    <div class="anime-users">42,029 users</div>
-                </div>
+            <div class="anime-details">
+              <div class="anime-rating">
+                <span>91%</span>
+              </div>
+              <div class="anime-users">246,574 users</div>
             </div>
-    
-            <!-- Anime Card 3 -->
-            <div class="top-anime-card">
-                <div class="anime-rank">#3</div>
-                <div class="anime-info">
-                    <div class="anime-title">ONE PIECE FAN LETTER</div>
-                    <div class="anime-tags">
-                        <span class="anime-tag">Action</span>
-                        <span class="anime-tag">Adventure</span>
-                        <span class="anime-tag">Fantasy</span>
-                    </div>
-                    <div class="anime-meta">
-                        <span class="anime-type">Special</span> • 
-                        <span class="anime-season">Fall 2024</span> • 
-                        <span class="anime-episodes">1 episode</span> • 
-                        <span class="anime-status">Finished</span>
-                    </div>
-                </div>
-                <div class="anime-details">
-                    <div class="anime-rating">
-                        <span>91%</span>
-                    </div>
-                    <div class="anime-users">21,507 users</div>
-                </div>
+          </div>
+
+          <!-- Anime Card 2 -->
+          <div class="top-anime-card">
+            <div class="anime-rank">#2</div>
+            <div class="anime-info">
+              <div class="anime-title">Gintama: THE FINAL</div>
+              <div class="anime-tags">
+                <span class="anime-tag">Action</span>
+                <span class="anime-tag">Comedy</span>
+                <span class="anime-tag">Drama</span>
+              </div>
+              <div class="anime-meta">
+                <span class="anime-type">Movie</span> •
+                <span class="anime-season">Winter 2021</span> •
+                <span class="anime-duration">1 hour, 44 mins</span> •
+                <span class="anime-status">Finished</span>
+              </div>
             </div>
-    
-            <!-- Anime Card 4 -->
-            <div class="top-anime-card">
-                <div class="anime-rank">#4</div>
-                <div class="anime-info">
-                    <div class="anime-title">Gintama°</div>
-                    <div class="anime-tags">
-                        <span class="anime-tag">Action</span>
-                        <span class="anime-tag">Comedy</span>
-                        <span class="anime-tag">Drama</span>
-                    </div>
-                    <div class="anime-meta">
-                        <span class="anime-type">TV Show</span> • 
-                        <span class="anime-season">Spring 2015</span> • 
-                        <span class="anime-episodes">51 episodes</span> • 
-                        <span class="anime-status">Finished</span>
-                    </div>
-                </div>
-                <div class="anime-details">
-                    <div class="anime-rating">
-                        <span>90%</span>
-                    </div>
-                    <div class="anime-users">100,167 users</div>
-                </div>
+            <div class="anime-details">
+              <div class="anime-rating">
+                <span>91%</span>
+              </div>
+              <div class="anime-users">42,029 users</div>
             </div>
-    
-            <!-- Anime Card 5 -->
-            <div class="top-anime-card">
-                <div class="anime-rank">#5</div>
-                <div class="anime-info">
-                    <div class="anime-title">Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST</div>
-                    <div class="anime-tags">
-                        <span class="anime-tag">Action</span>
-                        <span class="anime-tag">Adventure</span>
-                        <span class="anime-tag">Drama</span>
-                        <span class="anime-tag">Fantasy</span>
-                    </div>
-                    <div class="anime-meta">
-                        <span class="anime-type">TV Show</span> • 
-                        <span class="anime-season">Spring 2009</span> • 
-                        <span class="anime-episodes">64 episodes</span> • 
-                        <span class="anime-status">Finished</span>
-                    </div>
-                </div>
-                <div class="anime-details">
-                    <div class="anime-rating">
-                        <span>90%</span>
-                    </div>
-                    <div class="anime-users">572,923 users</div>
-                </div>
+          </div>
+
+          <!-- Anime Card 3 -->
+          <div class="top-anime-card">
+            <div class="anime-rank">#3</div>
+            <div class="anime-info">
+              <div class="anime-title">ONE PIECE FAN LETTER</div>
+              <div class="anime-tags">
+                <span class="anime-tag">Action</span>
+                <span class="anime-tag">Adventure</span>
+                <span class="anime-tag">Fantasy</span>
+              </div>
+              <div class="anime-meta">
+                <span class="anime-type">Special</span> •
+                <span class="anime-season">Fall 2024</span> •
+                <span class="anime-episodes">1 episode</span> •
+                <span class="anime-status">Finished</span>
+              </div>
             </div>
+            <div class="anime-details">
+              <div class="anime-rating">
+                <span>91%</span>
+              </div>
+              <div class="anime-users">21,507 users</div>
+            </div>
+          </div>
+
+          <!-- Anime Card 4 -->
+          <div class="top-anime-card">
+            <div class="anime-rank">#4</div>
+            <div class="anime-info">
+              <div class="anime-title">Gintama°</div>
+              <div class="anime-tags">
+                <span class="anime-tag">Action</span>
+                <span class="anime-tag">Comedy</span>
+                <span class="anime-tag">Drama</span>
+              </div>
+              <div class="anime-meta">
+                <span class="anime-type">TV Show</span> •
+                <span class="anime-season">Spring 2015</span> •
+                <span class="anime-episodes">51 episodes</span> •
+                <span class="anime-status">Finished</span>
+              </div>
+            </div>
+            <div class="anime-details">
+              <div class="anime-rating">
+                <span>90%</span>
+              </div>
+              <div class="anime-users">100,167 users</div>
+            </div>
+          </div>
+
+          <!-- Anime Card 5 -->
+          <div class="top-anime-card">
+            <div class="anime-rank">#5</div>
+            <div class="anime-info">
+              <div class="anime-title">
+                Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST
+              </div>
+              <div class="anime-tags">
+                <span class="anime-tag">Action</span>
+                <span class="anime-tag">Adventure</span>
+                <span class="anime-tag">Drama</span>
+                <span class="anime-tag">Fantasy</span>
+              </div>
+              <div class="anime-meta">
+                <span class="anime-type">TV Show</span> •
+                <span class="anime-season">Spring 2009</span> •
+                <span class="anime-episodes">64 episodes</span> •
+                <span class="anime-status">Finished</span>
+              </div>
+            </div>
+            <div class="anime-details">
+              <div class="anime-rating">
+                <span>90%</span>
+              </div>
+              <div class="anime-users">572,923 users</div>
+            </div>
+          </div>
         </div>
-    </div>
-    
+      </div>
+    </main>
 
-</main>
+    <footer>
+      <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W" />
+      <h2 id="title_footer">AniTracker</h2>
+      <div
+        id="group_members"
+        class="flex flex-align-center flex-justify-center"
+      >
+        <span>Shivam Patel</span>
+        <span>Diksha Smotra</span>
+        <span>Krish Lavani</span>
+        <span>Neel Patel</span>
+        <span>Jasdeep Singh Dhillon</span>
+      </div>
 
-  <footer>
-    <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W">
-    <h2 id="title_footer">AniTracker</h2>
-    <div id="group_members" class="flex flex-align-center flex-justify-center">
-      <span>Shivam Patel</span>
-      <span>Diksha Smotra</span>
-      <span>Krish Lavani</span>
-      <span>Neel Patel</span>
-      <span>Jasdeep Singh Dhillon</span>
-    </div>
+      <div id="references">
+        <h3>References</h3>
+        <ul>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
+          "
+              >Get Responsive Background Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe"
+            >
+              Responsive Grid
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <div id="references">
-      <h3>References</h3>
-      <ul>
-        <li>
-          <a href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
-          ">Get Responsive Background Image</a>
-        </li>
-        <li>
-          <a href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe">
-            Responsive Grid
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Conestoga College">Conestoga College</iframe>
-    <div id="footer_ds_id">
-      <h2>Join Us</h2>
-      <form class="subscribe-form_ds_class">
-        <input type="email" placeholder="Enter your email address">
-        <button>SUBSCRIBE</button>
-      </form>
-    </div>
-  </footer>
-</body>
-
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Conestoga College"
+        >Conestoga College</iframe
+      >
+      <div id="footer_ds_id">
+        <h2>Join Us</h2>
+        <form class="subscribe-form_ds_class">
+          <input type="email" placeholder="Enter your email address" />
+          <button>SUBSCRIBE</button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
