@@ -176,8 +176,9 @@ nav li:hover {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
+  margin: 25rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -186,7 +187,7 @@ nav li:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--secondary);
   border-radius: 10px;
-  border: 3px solid var(--text);
+  border: 3px transparent var(--background);
 }
