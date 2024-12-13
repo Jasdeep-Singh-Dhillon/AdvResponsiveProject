@@ -55,317 +55,349 @@
     </a>
   </header>
   <main role="main">
-        <div class="filters">
-            <input type="text" placeholder="Search">
-            <select>
-                <option value="">Genres</option>
-                <option value="action">Action</option>
-                <option value="comedy">Comedy</option>
-                <option value="drama">Drama</option>
-            </select>
-            <select>
-                <option value="">Year</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-            </select>
-            <select>
-                <option value="">Season</option>
-                <option value="winter">Winter</option>
-                <option value="spring">Spring</option>
-            </select>
-            <select>
-                <option value="">Format</option>
-                <option value="tv">TV Show</option>
-                <option value="movie">Movie</option>
-            </select>
-            <label for="toggle-filters" class="toggle-label">Toggle Advanced Filters</label>
-            <input type="checkbox" id="toggle-filters" style="display: none;">
-        </div>
-
-        <div class="advanced-filters">
-            <div class="range">
-                <label for="year-range">Year Range</label>
-                <input type="range" id="year-range" min="2000" max="2024">
-            </div>
-            <div class="range">
-                <label for="episodes">Episodes</label>
-                <input type="range" id="episodes" min="1" max="100">
-            </div>
-            <div class="range">
-                <label for="duration">Duration</label>
-                <input type="range" id="duration" min="10" max="200">
-            </div>
-            <label>
-                <input type="checkbox"> Doujin
-            </label>
-        </div>
-        <div class="section">
-          <h2>Trending Now</h2>
-          <div class="trending">
-              <div class="card">
-                  <img src="anime1.jpg" alt="Anime 1">
-                  <div class="info">
-                      <h3>Dandadan</h3>
-                      <p>Ep 11 airing in 23 hours</p>
-                      <div class="tags">
-                          <span class="tag">Action</span>
-                          <span class="tag">Comedy</span>
-                          <span class="tag">Drama</span>
-                      </div>
-                  </div>
-                  <div class="hover-details">
-                      <h3>Dandadan</h3>
-                      <p>Science SARU • TV Show • 12 episodes</p>
-                      <div class="tags">
-                          <span class="tag">Action</span>
-                          <span class="tag">Comedy</span>
-                          <span class="tag">Drama</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="card">
-                  <img src="anime2.jpg" alt="Anime 2">
-                  <div class="info">
-                      <h3>One Piece</h3>
-                      <p>Ep 1070 airing in 3 days</p>
-                      <div class="tags">
-                          <span class="tag">Adventure</span>
-                          <span class="tag">Fantasy</span>
-                      </div>
-                  </div>
-                  <div class="hover-details">
-                      <h3>One Piece</h3>
-                      <p>Toei Animation • TV Show • Ongoing</p>
-                      <div class="tags">
-                          <span class="tag">Adventure</span>
-                          <span class="tag">Fantasy</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="popular-section">
-        <h2>Popular This Season</h2>
-        <div class="popular-grid">
-            <!-- Card 1 -->
-            <div class="popular-card">
-                <img src="anime3.jpg" alt="Amagami-san Chi no Enmusubi">
-                <div class="card-info">
-                    <h3>Amagami-san Chi no Enmusubi</h3>
-                    <p>Ep 8 airing in 2 days</p>
-                    <p>Rating: 85%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Amagami-san Chi no Enmusubi</h3>
-                    <p>Slice of life • Comedy • Romance</p>
-                    <p>Studio: CloverWorks</p>
-                    <p>New episodes weekly</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="popular-card">
-                <img src="anime4.jpg" alt="Bleach: Thousand-Year Blood War">
-                <div class="card-info">
-                    <h3>Bleach: Thousand-Year Blood War</h3>
-                    <p>Ep 11 airing in 6 days</p>
-                    <p>Rating: 88%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Bleach: Thousand-Year Blood War</h3>
-                    <p>Action • Adventure • Supernatural</p>
-                    <p>Studio: Pierrot</p>
-                    <p>New episodes bi-weekly</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="popular-card">
-                <img src="anime5.jpg" alt="Blue Lock Season 2">
-                <div class="card-info">
-                    <h3>Blue Lock Season 2</h3>
-                    <p>Ep 8 airing in 14 hours</p>
-                    <p>Rating: 77%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Blue Lock Season 2</h3>
-                    <p>Sports • Drama • Action</p>
-                    <p>Studio: 8bit</p>
-                    <p>New episodes weekly</p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="popular-card">
-                <img src="anime6.jpg" alt="Shangri-La Frontier Season 2">
-                <div class="card-info">
-                    <h3>Shangri-La Frontier Season 2</h3>
-                    <p>Ep 7 airing in 1 day</p>
-                    <p>Rating: 79%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Shangri-La Frontier Season 2</h3>
-                    <p>Action • Adventure • Fantasy</p>
-                    <p>Studio: C2C</p>
-                    <p>Dive into a vast virtual world</p>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="popular-card">
-                <img src="anime7.jpg" alt="Re:ZERO -Starting Life in Another World- Season 3">
-                <div class="card-info">
-                    <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
-                    <p>Ep 16 airing on October 2</p>
-                    <p>Rating: 86%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
-                    <p>Adventure • Drama • Fantasy</p>
-                    <p>Studio: White Fox</p>
-                    <p>A journey of survival and love</p>
-                </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="popular-card">
-                <img src="anime8.jpg" alt="Uzumaki">
-                <div class="card-info">
-                    <h3>Uzumaki</h3>
-                    <p>Ep 4 aired on September 29</p>
-                    <p>Rating: 57%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Uzumaki</h3>
-                    <p>Horror • Drama</p>
-                    <p>Studio: Akatsuki, Fugaku</p>
-                    <p>A small town plagued by spirals</p>
-                </div>
-            </div>
-            <!-- Card 7 -->
-            <div class="popular-card">
-                <img src="anime9.jpg" alt="Seirei Gensouki: Spirit Chronicles Season 2">
-                <div class="card-info">
-                    <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
-                    <p>Ep 8 airing in 2 days</p>
-                    <p>Rating: 70%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
-                    <p>Adventure • Romance • Fantasy</p>
-                    <p>Studio: TMS Entertainment, WAO</p>
-                    <p>A young man’s journey of magic</p>
-                </div>
-            </div>
-            <!-- Card 8 -->
-            <div class="popular-card">
-                <img src="anime10.jpg" alt="Dan Da Dan">
-                <div class="card-info">
-                    <h3>Dan Da Dan</h3>
-                    <p>Ep 9 of 12 airing in 5 days</p>
-                    <p>Rating: 85%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Dan Da Dan</h3>
-                    <p>Action • Comedy</p>
-                    <p>Studio: Science SARU</p>
-                    <p>A thrilling tale of friendship</p>
-                </div>
-            </div>
-            <!-- Card 9 -->
-            <div class="popular-card">
-                <img src="anime11.jpg" alt="Arifureta: From Commonplace to World’s Strongest Season 3">
-                <div class="card-info">
-                    <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
-                    <p>Ep 7 airing in 2 days</p>
-                    <p>Rating: 73%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
-                    <p>Action • Adventure • Fantasy</p>
-                    <p>Studio: Asread</p>
-                    <p>A hero’s fight to protect his world</p>
-                </div>
-            </div>
-            <!-- Card 10 -->
-            <div class="popular-card">
-                <img src="anime12.jpg" alt="Dragon Ball Z">
-                <div class="card-info">
-                    <h3>Dragon Ball Z</h3>
-                    <p>Ep 8 airing in 6 days</p>
-                    <p>Rating: 77%</p>
-                </div>
-                <div class="card-hover-details">
-                    <h3>Dragon Ball Z</h3>
-                    <p>Action • Adventure • Supernatural</p>
-                    <p>Studio: Toei Animation</p>
-                    <p>A legendary warrior’s saga continues</p>
-                </div>
-            </div>
-        </div>
+    <div class="filters">
+      <input type="text" placeholder="Search">
+      <select>
+        <option value="">Genres</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+      </select>
+      <select>
+        <option value="">Year</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+      </select>
+      <select>
+        <option value="">Season</option>
+        <option value="winter">Winter</option>
+        <option value="spring">Spring</option>
+      </select>
+      <select>
+        <option value="">Format</option>
+        <option value="tv">TV Show</option>
+        <option value="movie">Movie</option>
+      </select>
+      <label for="toggle-filters" class="toggle-label">Toggle Advanced Filters</label>
+      <input type="checkbox" id="toggle-filters" style="display: none;">
     </div>
-  <div class="section">
-    <h2>Top 100 Anime</h2>
-    <table class="table">
+
+    <div class="advanced-filters">
+      <div class="range">
+        <label for="year-range">Year Range</label>
+        <input type="range" id="year-range" min="2000" max="2024">
+      </div>
+      <div class="range">
+        <label for="episodes">Episodes</label>
+        <input type="range" id="episodes" min="1" max="100">
+      </div>
+      <div class="range">
+        <label for="duration">Duration</label>
+        <input type="range" id="duration" min="10" max="200">
+      </div>
+      <label>
+        <input type="checkbox"> Doujin
+      </label>
+    </div>
+    <div class="section">
+      <h2>Trending Now</h2>
+      <div class="trending">
+        <div class="card">
+          <img src="anime1.jpg" alt="Anime 1">
+          <div class="info">
+            <h3>Dandadan</h3>
+            <p>Ep 11 airing in 23 hours</p>
+            <div class="tags">
+              <span class="tag">Action</span>
+              <span class="tag">Comedy</span>
+              <span class="tag">Drama</span>
+            </div>
+          </div>
+          <div class="hover-details">
+            <h3>Dandadan</h3>
+            <p>Science SARU • TV Show • 12 episodes</p>
+            <div class="tags">
+              <span class="tag">Action</span>
+              <span class="tag">Comedy</span>
+              <span class="tag">Drama</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="anime2.jpg" alt="Anime 2">
+          <div class="info">
+            <h3>One Piece</h3>
+            <p>Ep 1070 airing in 3 days</p>
+            <div class="tags">
+              <span class="tag">Adventure</span>
+              <span class="tag">Fantasy</span>
+            </div>
+          </div>
+          <div class="hover-details">
+            <h3>One Piece</h3>
+            <p>Toei Animation • TV Show • Ongoing</p>
+            <div class="tags">
+              <span class="tag">Adventure</span>
+              <span class="tag">Fantasy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular-section">
+      <h2>Popular This Season</h2>
+      <div class="popular-grid">
+        <!-- Card 1 -->
+        <div class="popular-card">
+          <img src="anime3.jpg" alt="Amagami-san Chi no Enmusubi">
+          <div class="card-info">
+            <h3>Amagami-san Chi no Enmusubi</h3>
+            <p>Ep 8 airing in 2 days</p>
+            <p>Rating: 85%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Amagami-san Chi no Enmusubi</h3>
+            <p>Slice of life • Comedy • Romance</p>
+            <p>Studio: CloverWorks</p>
+            <p>New episodes weekly</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="popular-card">
+          <img src="anime4.jpg" alt="Bleach: Thousand-Year Blood War">
+          <div class="card-info">
+            <h3>Bleach: Thousand-Year Blood War</h3>
+            <p>Ep 11 airing in 6 days</p>
+            <p>Rating: 88%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Bleach: Thousand-Year Blood War</h3>
+            <p>Action • Adventure • Supernatural</p>
+            <p>Studio: Pierrot</p>
+            <p>New episodes bi-weekly</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="popular-card">
+          <img src="anime5.jpg" alt="Blue Lock Season 2">
+          <div class="card-info">
+            <h3>Blue Lock Season 2</h3>
+            <p>Ep 8 airing in 14 hours</p>
+            <p>Rating: 77%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Blue Lock Season 2</h3>
+            <p>Sports • Drama • Action</p>
+            <p>Studio: 8bit</p>
+            <p>New episodes weekly</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="popular-card">
+          <img src="anime6.jpg" alt="Shangri-La Frontier Season 2">
+          <div class="card-info">
+            <h3>Shangri-La Frontier Season 2</h3>
+            <p>Ep 7 airing in 1 day</p>
+            <p>Rating: 79%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Shangri-La Frontier Season 2</h3>
+            <p>Action • Adventure • Fantasy</p>
+            <p>Studio: C2C</p>
+            <p>Dive into a vast virtual world</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="popular-card">
+          <img src="anime7.jpg" alt="Re:ZERO -Starting Life in Another World- Season 3">
+          <div class="card-info">
+            <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
+            <p>Ep 16 airing on October 2</p>
+            <p>Rating: 86%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
+            <p>Adventure • Drama • Fantasy</p>
+            <p>Studio: White Fox</p>
+            <p>A journey of survival and love</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="popular-card">
+          <img src="anime8.jpg" alt="Uzumaki">
+          <div class="card-info">
+            <h3>Uzumaki</h3>
+            <p>Ep 4 aired on September 29</p>
+            <p>Rating: 57%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Uzumaki</h3>
+            <p>Horror • Drama</p>
+            <p>Studio: Akatsuki, Fugaku</p>
+            <p>A small town plagued by spirals</p>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="popular-card">
+          <img src="anime9.jpg" alt="Seirei Gensouki: Spirit Chronicles Season 2">
+          <div class="card-info">
+            <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
+            <p>Ep 8 airing in 2 days</p>
+            <p>Rating: 70%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Seirei Gensouki: Spirit Chronicles Season 2</h3>
+            <p>Adventure • Romance • Fantasy</p>
+            <p>Studio: TMS Entertainment, WAO</p>
+            <p>A young man’s journey of magic</p>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="popular-card">
+          <img src="anime10.jpg" alt="Dan Da Dan">
+          <div class="card-info">
+            <h3>Dan Da Dan</h3>
+            <p>Ep 9 of 12 airing in 5 days</p>
+            <p>Rating: 85%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Dan Da Dan</h3>
+            <p>Action • Comedy</p>
+            <p>Studio: Science SARU</p>
+            <p>A thrilling tale of friendship</p>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="popular-card">
+          <img src="anime11.jpg" alt="Arifureta: From Commonplace to World’s Strongest Season 3">
+          <div class="card-info">
+            <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
+            <p>Ep 7 airing in 2 days</p>
+            <p>Rating: 73%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Arifureta: From Commonplace to World’s Strongest Season 3</h3>
+            <p>Action • Adventure • Fantasy</p>
+            <p>Studio: Asread</p>
+            <p>A hero’s fight to protect his world</p>
+          </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="popular-card">
+          <img src="anime12.jpg" alt="Dragon Ball Z">
+          <div class="card-info">
+            <h3>Dragon Ball Z</h3>
+            <p>Ep 8 airing in 6 days</p>
+            <p>Rating: 77%</p>
+          </div>
+          <div class="card-hover-details">
+            <h3>Dragon Ball Z</h3>
+            <p>Action • Adventure • Supernatural</p>
+            <p>Studio: Toei Animation</p>
+            <p>A legendary warrior’s saga continues</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Top 100 Anime</h2>
+      <table class="table">
         <thead>
-            <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Genres</th>
-                <th>Rating</th>
-            </tr>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Genres</th>
+            <th>Rating</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="rank">1</td>
-                <td class="title">Sousou no Frieren</td>
-                <td>
-                    <span class="tag">Adventure</span>
-                    <span class="tag">Drama</span>
-                    <span class="tag">Fantasy</span>
-                </td>
-                <td>
-                    <span class="rating">91%</span>
-                    <br>
-                    <span class="users">246,574 users</span>
-                    <br>
-                    <span class="type">TV Show | Fall 2023</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="rank">2</td>
-                <td class="title">Gintama: THE FINAL</td>
-                <td>
-                    <span class="tag">Action</span>
-                    <span class="tag">Comedy</span>
-                    <span class="tag">Drama</span>
-                </td>
-                <td>
-                    <span class="rating">91%</span>
-                    <br>
-                    <span class="users">42,029 users</span>
-                    <br>
-                    <span class="type">Movie | Winter 2021</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="rank">3</td>
-                <td class="title">ONE PIECE FAN LETTER</td>
-                <td>
-                    <span class="tag">Action</span>
-                    <span class="tag">Adventure</span>
-                    <span class="tag">Fantasy</span>
-                </td>
-                <td>
-                    <span class="rating">91%</span>
-                    <br>
-                    <span class="users">21,507 users</span>
-                    <br>
-                    <span class="type">Special | Fall 2024</span>
-                </td>
-            </tr>
+          <tr>
+            <td class="rank">1</td>
+            <td class="title">Sousou no Frieren</td>
+            <td>
+              <span class="tag">Adventure</span>
+              <span class="tag">Drama</span>
+              <span class="tag">Fantasy</span>
+            </td>
+            <td>
+              <span class="rating">91%</span>
+              <br>
+              <span class="users">246,574 users</span>
+              <br>
+              <span class="type">TV Show | Fall 2023</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rank">2</td>
+            <td class="title">Gintama: THE FINAL</td>
+            <td>
+              <span class="tag">Action</span>
+              <span class="tag">Comedy</span>
+              <span class="tag">Drama</span>
+            </td>
+            <td>
+              <span class="rating">91%</span>
+              <br>
+              <span class="users">42,029 users</span>
+              <br>
+              <span class="type">Movie | Winter 2021</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rank">3</td>
+            <td class="title">ONE PIECE FAN LETTER</td>
+            <td>
+              <span class="tag">Action</span>
+              <span class="tag">Adventure</span>
+              <span class="tag">Fantasy</span>
+            </td>
+            <td>
+              <span class="rating">91%</span>
+              <br>
+              <span class="users">21,507 users</span>
+              <br>
+              <span class="type">Special | Fall 2024</span>
+            </td>
+          </tr>
         </tbody>
-    </table>
-</div>
+      </table>
+    </div>
 
-</main>
+  </main>
   <footer>
-    Neel Patel
+    <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W">
+    <h2 id="title_footer">AniTracker</h2>
+    <div id="group_members" class="flex flex-align-center flex-justify-center">
+      <span>Shivam Patel</span>
+      <span>Diksha Smotra</span>
+      <span>Krish Lavani</span>
+      <span>Neel Patel</span>
+      <span>Jasdeep Singh Dhillon</span>
+    </div>
+
+    <div id="references">
+      <h3>References</h3>
+      <ul>
+        <li>
+          <a href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
+          ">Get Responsive Background Image</a>
+        </li>
+        <li>
+          <a href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe">
+            Responsive Grid
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Conestoga College">Conestoga College</iframe>
+    <div id="footer_ds_id">
+      <h2>Join Us</h2>
+      <form class="subscribe-form_ds_class">
+        <input type="email" placeholder="Enter your email address">
+        <button>SUBSCRIBE</button>
+      </form>
+    </div>
   </footer>
 </body>
 

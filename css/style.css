@@ -168,6 +168,10 @@ footer {
   grid-area: group;
   padding: 1rem 0;
   justify-self: start;
+  font-weight: bold;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #references {
@@ -285,6 +289,34 @@ footer {
     width: 100%;
     text-align: center;
     padding: 0.5rem;
+  }
+
+  footer {
+    grid-template-areas:
+    "icon title"
+    "group group"
+    "references references"
+    "map map"
+    "join join";
+    grid-template-columns: 100px 1fr;
+  }
+
+  #logo_footer {
+    justify-self: end;
+  }
+
+  #title_footer {
+    justify-self: center;
+  }
+
+  #references h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #map {
+    justify-self: center;
+    width: 90%;
   }
 }
 
