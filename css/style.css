@@ -159,6 +159,9 @@ footer {
 }
 
 #title_footer {
+  font-family: "Protest Revolution", serif;
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
   grid-area: title;
   text-align: start;
   margin: 1rem;

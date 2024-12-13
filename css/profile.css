@@ -28,7 +28,7 @@ body {
   background-position: center;
   mask-repeat: no-repeat;
   overflow: hidden;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--secondary);
 }
 
 .pro-profile img {
@@ -47,8 +47,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--card-background);
-  padding: 10px 0;
+  padding: 1rem 0;
   flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+  border-radius: .5rem;
 }
 
 .pro-nav ul {
@@ -103,14 +106,15 @@ body {
   flex-wrap: wrap;
   padding: 8px;
   background-color: var(--primary);
+  border-radius: .5rem;
 }
 
 .pro-activity-block {
   height: 10px;
   width: 10px;
-  background-color: white;
+  background-color: var(--text);
   margin: 0px 4px 4px 0px;
-  border-radius: 1px;
+  border-radius: 4px;
 }
 
 .pro-activity-block:hover {
@@ -122,8 +126,8 @@ body {
 }
 
 .pro-genre-overview {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .pro-genre-overview-container {
@@ -208,8 +212,8 @@ body {
 }
 
 .pro-score-view-1 {
-  grid-column: 2;
-  grid-row: 1/2;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .pro-score-statics {
@@ -217,8 +221,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary);
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
   color: white;
+  border-radius: 1rem;
 }
 
 .pro-score-view-container {
@@ -247,6 +253,7 @@ body {
   width: 190px;
   background-color: var(--primary) !important;
   height: 20px;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .pro-score-slider-measurement {
@@ -296,6 +303,7 @@ body {
 .pro-top-manga-card-container {
   display: flex;
   margin: 4px;
+  justify-content: center;
 }
 
 .pro-top-anime-card,
@@ -304,7 +312,7 @@ body {
   border-radius: 5px;
   width: fit-content;
   height: fit-content;
-  margin: 10px auto;
+  margin: 0 .5rem;
   background-color: var(--card-background);
   box-shadow: 0px 0px 8px var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease,
