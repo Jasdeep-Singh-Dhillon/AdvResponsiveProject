@@ -84,6 +84,11 @@
 .h3_kl{
     font-size: xx-large;
     text-align: center;
+    box-shadow: 0 0px 10px var(--card-shadow);
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    width: 85%;
 }
 
 .card_heading_kl,
@@ -133,6 +138,8 @@
     grid-area: watching;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .container_kl {
