@@ -30,6 +30,7 @@
 
 #sidebar-list_kl ul {
     list-style-type: none;
+    padding-inline-start: 0%;
 }
 
 #input_kl{
@@ -40,6 +41,7 @@
 
 #sidebar-list_kl ul li {
     padding: 5px 0;
+    text-align: center;
 }
 
 #sidebar-list_kl ul li a{
@@ -81,6 +83,7 @@
 
 .h3_kl{
     font-size: xx-large;
+    text-align: center;
 }
 
 .card_heading_kl,
@@ -214,9 +217,6 @@
     }
     .card_heading_kl{
         display: none;
-    }
-    .h3_kl{
-        text-align: center;
     }
     #watching_kl{
         align-items: center;
