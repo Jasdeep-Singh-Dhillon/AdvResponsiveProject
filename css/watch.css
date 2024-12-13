@@ -96,6 +96,8 @@
     color: white;
     padding: 15px;
     border-radius: 5px; 
+    position: sticky;
+    top: 0;
     /* background: var(--card-background); */
 }
 
