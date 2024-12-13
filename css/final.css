@@ -235,7 +235,7 @@ footer {
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  background: #c63f72;
+  background: var(--primary);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -244,6 +244,11 @@ footer {
 .subscribe-form_ds_class button:hover {
   background-color: black;
   transform: scale(1.05);
+}
+
+
+.my_body footer button {
+    background: #c63f72;
 }
 
 @media screen and (max-width: 1100px) {
