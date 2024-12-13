@@ -200,6 +200,11 @@ input[type="range"] {
   opacity: 1;
 }
 
+.info > p {
+  font-family: 'Doto', serif;
+  font-weight: bolder;
+}
+
 .card:hover .info {
   visibility: hidden;
   opacity: 0;
@@ -377,7 +382,7 @@ input[type="range"] {
 .popular-section h2 {
   font-size: 22px;
   margin-bottom: 20px;
-  color: #c30018;
+  color: var(--primary);
 }
 
 .popular-grid {
