@@ -406,6 +406,11 @@ body {
     grid-template-rows: auto;
   }
 
+  .pro-genre-overview {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
   .pro-score-view-1 {
     grid-column: 1;
     grid-row: 3;
