@@ -14,9 +14,9 @@ main {
 #hero {
   grid-area: hero;
   background-image: url(../img/hero.jpg);
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   position: relative;
   height: 0;

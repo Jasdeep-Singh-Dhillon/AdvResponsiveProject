@@ -11,12 +11,7 @@ body {
   padding: 20px;
   display: flex;
   align-items: center;
-
-  display: flex;
-  align-items: center;
-  padding: 10px;
   margin: 20px auto;
-
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -37,8 +32,8 @@ body {
 }
 
 .pro-profile img {
-  height: 200px;
-  width: 160px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .pro-username {
@@ -53,6 +48,7 @@ body {
   align-items: center;
   background-color: var(--card-background);
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .pro-nav ul {
@@ -61,6 +57,10 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.pro-container h2 {
+  text-align: center;
 }
 
 .pro-nav a {
@@ -388,7 +388,8 @@ body {
   }
 
   .pro-nav ul {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
 

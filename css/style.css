@@ -72,6 +72,7 @@ nav li {
 
 #account_icon:hover {
   transition: all 400ms;
+  color: var(--secondary);
 }
 
 nav a:hover {
