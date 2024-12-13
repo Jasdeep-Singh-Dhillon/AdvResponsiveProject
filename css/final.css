@@ -138,9 +138,9 @@ nav li:hover {
 }
 
 footer {
-  background: linear-gradient(45deg, #c63f72, #571931);
+  background: var(--card-background);
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "icon title"
     "group group"
@@ -151,6 +151,9 @@ footer {
   justify-content: center;
   font-family: "Inter", sans-serif;
   color: var(--text);
+  border: 1px solid var(--border-color);
+  border-radius: .5rem .5rem;
+  margin-left: .5rem;
 }
 
 #logo_footer {
@@ -212,7 +215,7 @@ footer {
   width: 100%;
   padding: 15px;
   font-size: 1.2rem;
-  border: none;
+  border: 2px solid var(--border-color);
   border-radius: 5px;
   background: var(--card-background);
   color: white;
@@ -259,6 +262,25 @@ footer {
   nav {
     margin: 0 2rem;
     order: 3;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "icon"
+      "title"
+      "group"
+      "references"
+      "map"
+      "join";
+  }
+
+  #logo_footer {
+    justify-self: center;
+  }
+
+  #title_footer {
+    justify-self: center;
   }
 }
 
@@ -2237,32 +2259,34 @@ input[type="range"] {
 }
 
 #contact form {
-    width: 90%;
-    padding: 2rem;
+  width: 90%;
+  padding: 2rem;
 }
 
-#contact input, #contact textarea {
-    padding: 1rem;
-    border-radius: .5rem;
-    outline: none;
-    border: 2px solid var(--background);
+#contact input,
+#contact textarea {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid var(--background);
 }
 
-#contact input:focus, #contact textarea:focus {
-    border: 2px solid var(--secondary);
+#contact input:focus,
+#contact textarea:focus {
+  border: 2px solid var(--secondary);
 }
 
 #contact label {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 #contact button {
-    padding: 1rem;
-    margin: 1rem 0;
-    font-family: 'Inter', sans-serif;
-    background: var(--primary);
-    outline: none;
-    border: none;
-    border-radius: .5rem;
-    color: var(--text);
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: "Inter", sans-serif;
+  background: var(--primary);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text);
 }
