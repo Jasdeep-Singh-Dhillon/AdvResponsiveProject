@@ -45,13 +45,22 @@ main {
 #manga_list {
   gap: 10px;
   flex-wrap: nowrap;
-  /* padding: 1rem; */
+  padding: .5rem;
 }
 
 #trending_manga {
   grid-area: mangas;
   width: 100%;
   overflow-x: auto;
+}
+
+#trending_anime::-webkit-scrollbar, #trending_manga::-webkit-scrollbar {
+  height: 22px;
+}
+
+#trending_anime::-webkit-scrollbar-thumb, #trending_manga::-webkit-scrollbar-thumb {
+  border: 8px solid var(--background);
+  border-radius: 3rem;
 }
 
 #review_section {
@@ -193,11 +202,11 @@ main {
   overflow-y: scroll;
 }
 
-.post span::-webkit-scrollbar {
+.post span::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.post span:hover::-webkit-scrollbar {
+.post span:hover::-webkit-scrollbar-thumb {
   display: block;
 }
 
@@ -294,9 +303,6 @@ main {
   grid-area: changelog;
 }
 
-footer {
-  margin: 2rem;
-}
 
 /* Change Hero background Image in media query */
 @media screen and (max-width: 1100px) {

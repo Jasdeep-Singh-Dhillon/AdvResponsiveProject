@@ -3,6 +3,7 @@
 :root {
   --primary: #f94449;
   --secondary: #c1807c;
+  --footer-background: #f8a39e;
   --background: #1f1919;
   --card-background: #171717;
   --text: #fafafa;
@@ -13,7 +14,6 @@
 
 body {
   background-color: var(--background);
-
   color: var(--text);
   box-sizing: border-box;
   margin: 0;
@@ -40,6 +40,17 @@ header {
 #logo {
   max-width: 75px;
   margin: 0 1em;
+}
+
+#site_title {
+  color: var(--text);
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+#site_title:hover {
+  color: var(--secondary);
+  transition: all 400ms;
 }
 
 #site_title h1 {
@@ -125,6 +136,55 @@ nav li:hover {
   color: var(--secondary);
 }
 
+footer {
+  background-color: var(--footer-background);
+  color: var(--card-background);
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "icon title"
+    "group group"
+    "references map";
+  padding: 2rem;
+  align-items: start;
+  justify-content: center;
+}
+
+#logo_footer {
+  grid-area: icon;
+  max-width: 60px;
+  justify-self: end;
+}
+
+#title_footer {
+  grid-area: title;
+  text-align: start;
+  margin: 1rem;
+}
+
+#group_members {
+  grid-area: group;
+  padding: 1rem 0;
+  justify-self: center;
+}
+
+#references {
+  grid-area: references;
+  justify-items: start;
+}
+
+#references a {
+  color: var(--background);
+}
+
+#map {
+  grid-area: map;
+  justify-self: center;
+  width: 90%;
+  max-height: 300px;
+}
+
 @media screen and (max-width: 1100px) {
   header {
     flex-wrap: wrap;
@@ -176,9 +236,8 @@ nav li:hover {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  margin: 25rem;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -188,6 +247,6 @@ nav li:hover {
 
 ::-webkit-scrollbar-thumb {
   background: var(--secondary);
-  border-radius: 10px;
-  border: 3px transparent var(--background);
+  border-radius: 0.25rem;
+  border: 2px solid var(--card-background);
 }
