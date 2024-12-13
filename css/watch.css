@@ -93,9 +93,7 @@
 
 .sidebar {
     grid-area: sidebar;
-    position: sticky;
     color: white;
-    top: 0;
     padding: 15px;
     border-radius: 5px; 
     /* background: var(--card-background); */
