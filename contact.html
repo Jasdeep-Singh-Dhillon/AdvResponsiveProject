@@ -11,13 +11,13 @@
 </head>
 
 <body>
-  <header class="flex flex-align-center">
-    <div id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
+  <header class="flex flex-align-center" role="heading" aria-level="1">
+    <a href="index.html" id="site_title" class="flex flex-align-center">
       <img src="img/logo.png" alt="Logo of the Site" id="logo">
       <h1>
         AniTracker
       </h1>
-    </div>
+    </a>
     <nav role="navigation" aria-label="navigation">
       <ul class="flex flex-align-center">
         <li>
@@ -54,7 +54,21 @@
       </h3>
     </a>
   </header>
-  <main role="main"></main>
+
+  <main role="main" id="contact">
+    <form action="#" class="flex flex-column">
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email">
+
+      <label for="message">Message: </label>
+      <textarea name="message" id="message" rows="10"></textarea>
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+  </main>
+
   <footer>
     <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W">
     <h2 id="title_footer">AniTracker</h2>

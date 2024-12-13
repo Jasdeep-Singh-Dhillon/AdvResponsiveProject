@@ -138,9 +138,9 @@ nav li:hover {
 }
 
 footer {
-  background: linear-gradient(to bottom, #c63f72, #571931);
+  background: linear-gradient(45deg, #c63f72, #571931);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .5fr 1fr;
   grid-template-areas:
     "icon title"
     "group group"
@@ -166,6 +166,7 @@ footer {
   grid-area: title;
   text-align: start;
   margin: 1rem;
+  justify-self: start;
 }
 
 #group_members {
@@ -181,10 +182,6 @@ footer {
 #references {
   grid-area: references;
   justify-items: start;
-}
-
-#references a {
-  color: var(--background);
 }
 
 #map {
@@ -656,6 +653,11 @@ footer {
 
   #jd-main #posts {
     padding: 0;
+  }
+
+  #jd-main #hero {
+    background-image: url(../img/attack.jpg);
+    padding-top: 55%;
   }
 }
 
@@ -1296,10 +1298,6 @@ footer {
 
 .tab-anime-image:hover {
   transform: scale(1.1);
-}
-
-body {
-  margin: 0px;
 }
 
 .pro-container {
@@ -2236,4 +2234,35 @@ input[type="range"] {
 .popular-card:hover {
   box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3),
     0 4px 8px rgba(255, 0, 0, 0.4);
+}
+
+#contact form {
+    width: 90%;
+    padding: 2rem;
+}
+
+#contact input, #contact textarea {
+    padding: 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 2px solid var(--background);
+}
+
+#contact input:focus, #contact textarea:focus {
+    border: 2px solid var(--secondary);
+}
+
+#contact label {
+    padding: 1rem 0;
+}
+
+#contact button {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--primary);
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    color: var(--text);
 }
