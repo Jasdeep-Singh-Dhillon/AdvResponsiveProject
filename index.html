@@ -1,663 +1,795 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home_Page" />
+    <title>AniTracker</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/final.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Home_Page">
-  <title>AniTracker</title>
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/final.css">
-</head>
+  <body>
+    <header class="flex flex-align-center">
+      <a
+        href="index.html"
+        id="site_title"
+        class="flex flex-align-center"
+        role="heading"
+        aria-level="1"
+      >
+        <img src="img/logo.png" alt="Logo of the Site" id="logo" />
+        <h1>AniTracker</h1>
+      </a>
+      <nav role="navigation">
+        <ul class="flex flex-align-center">
+          <li>
+            <a href="#" id="current"> Home </a>
+          </li>
+          <li>
+            <a href="watch.html"> Watch </a>
+          </li>
+          <li>
+            <a href="airing.html"> Airing </a>
+          </li>
+          <li>
+            <a href="list.html"> List </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <a id="account_icon" class="flex flex-align-center" href="profile.html">
+        <img src="img/profile.png" alt="Profile Icon" />
+        <h3>Arc</h3>
+      </a>
+    </header>
+    <main role="main" id="jd-main">
+      <section id="hero" class="flex flex-justify-center"></section>
 
-<body>
-  <header class="flex flex-align-center">
-    <a href="index.html" id="site_title" class="flex flex-align-center" role="heading" aria-level="1">
-      <img src="img/logo.png" alt="Logo of the Site" id="logo">
-      <h1>
-        AniTracker
-      </h1>
-    </a>
-    <nav role="navigation">
-      <ul class="flex flex-align-center">
-        <li>
-          <a href="#" id="current">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="watch.html">
-            Watch
-          </a>
-        </li>
-        <li>
-          <a href="airing.html">
-            Airing
-          </a>
-        </li>
-        <li>
-          <a href="list.html">
-            List
-          </a>
-        </li>
-        <li>
-          <a href="contact.html">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <a id="account_icon" class="flex flex-align-center" href="profile.html">
-      <img src="img/profile.png" alt="Profile Icon">
-      <h3>
-        Arc
-      </h3>
-    </a>
-  </header>
-  <main role="main" id="jd-main">
-    <section id="hero" class="flex flex-justify-center">
-    </section>
+      <section id="trending_anime">
+        <h2>Trending Anime</h2>
 
-    <section id="trending_anime">
-      <h2>
-        Trending Anime
-      </h2>
-
-      <div id="anime_list" class="flex">
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/attackontitan.jpg" alt="Attack on Titan Poster">
+        <div id="anime_list" class="flex">
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img
+                src="img/anime/attackontitan.jpg"
+                alt="Attack on Titan Poster"
+              />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Attack on Titan</h3>
+              <span class="synopsis">
+                Several hundred years ago, humans were nearly exterminated by
+                titans. Titans are typically several stories tall, seem to have
+                no intelligence, devour human beings and, worst of all, seem to
+                do it for the pleasure rather than as a food source. A small
+                percentage of humanity survived by walling themselves in a city
+                protected by extremely high walls, even taller than the biggest
+                of titans. Flash forward to the present and the city has not
+                seen a titan in over 100 years. Teenage boy Eren and his foster
+                sister Mikasa witness something horrific as the city walls are
+                destroyed by a colossal titan that appears out of thin air. As
+                the smaller titans flood the city, the two kids watch in horror
+                as their mother is eaten alive. Eren vows that he will murder
+                every single titan and take revenge for all of mankind.
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
+            </div>
           </div>
-          <div class="anime_details flex flex-column">
-            <h3>Attack on Titan</h3>
-            <span class="synopsis">
-              Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest of titans.
-
-              Flash forward to the present and the city has not seen a titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img src="img/anime/dandadan.jpg" alt="Dan Da Dan Poster" />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Dan Da Dan</h3>
+              <span class="synopsis">
+                This is a story about Momo, a high school girl who comes from a
+                family of spirit mediums, and her classmate Okarun, an occult
+                fanatic. After Momo rescues Okarun from being bullied, they
+                begin talking. However, an argument ensues between them since
+                Momo believes in ghosts but denies aliens exist, and Okarun
+                believes in aliens but denies ghosts exist. To prove to each
+                other what they believe in is real, Momo goes to an abandoned
+                hospital where a UFO has been spotted and Okarun goes to a
+                tunnel rumored to be haunted. To their surprise, they each
+                encounter overwhelming paranormal activities that transcend
+                comprehension. Amid these predicaments, Momo awakens her hidden
+                power and Okarun gains the power of a curse to overcome these
+                new dangers! Their fateful love begins as well!? The story of
+                the occult battle and adolescence starts! Notes: - Worldwide
+                premiere of Episode 1 before the Japanese television premiere
+                occurred at Anime Expo July 6, 2024. - Episodes 1-3 titled as
+                DAN DA DAN: FIRST ENCOUNTER was pre-screened in advance in
+                theaters on August 31, 2024 in Asia, September 7, 2024 in Europe
+                and September 13, 2024 in North America. The regular TV
+                broadcast began October 4, 2024.
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
+            </div>
+          </div>
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img src="img/anime/deathnote.jpg" alt="Death Note Poster" />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Death Note</h3>
+              <span class="synopsis">
+                Light Yagami is a genius high school student who is about to
+                learn about life through a book of death. When a bored
+                shinigami, a God of Death, named Ryuk drops a black notepad
+                called a Death Note, Light receives power over life and death
+                with the stroke of a pen. Determined to use this dark gift for
+                the best, Light sets out to rid the world of evil… namely, the
+                people he believes to be evil. Should anyone hold such power?
+                The consequences of Light’s actions will set the world ablaze.
+                (Source: Viz Media)
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
+            </div>
+          </div>
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img src="img/anime/demonslayer.jpg" alt="Demon Slayer Poster" />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Demon Slayer</h3>
+              <span class="synopsis">
+                It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who
+                sells charcoal for a living, finds his family slaughtered by a
+                demon. To make matters worse, his younger sister Nezuko, the
+                sole survivor, has been transformed into a demon herself. Though
+                devastated by this grim reality, Tanjiro resolves to become a
+                “demon slayer” so that he can turn his sister back into a human,
+                and kill the demon that massacred his family. (Source:
+                Crunchyroll)
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
+            </div>
+          </div>
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img
+                src="img/anime/dragonball.jpg"
+                alt="Dragon Ball Daima Poster"
+              />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Dragon Ball: Daima</h3>
+              <span class="synopsis">
+                Goku and company were living peaceful lives when they suddenly
+                turned small due to a conspiracy! When they discover that the
+                reason for this may lie in a world known as the "Demon Realm", a
+                mysterious young Majin named Glorio appears before them. Note:
+                Relations are provisional and will be updated when more info is
+                announced.
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
+            </div>
+          </div>
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img src="img/anime/frieren.jpg" alt="Frieren Poster" />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Frieren: Beyond Journey's End</h3>
+              <span class="synopsis">
+                The adventure is over but life goes on for an elf mage just
+                beginning to learn what living is all about. Elf mage Frieren
+                and her courageous fellow adventurers have defeated the Demon
+                King and brought peace to the land. But Frieren will long
+                outlive the rest of her former party. How will she come to
+                understand what life means to the people around her? Decades
+                after their victory, the funeral of one her friends confronts
+                Frieren with her own near immortality. Frieren sets out to
+                fulfill the last wishes of her comrades and finds herself
+                beginning a new adventure… (Source: Crunchyroll)
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
+            </div>
+          </div>
+          <div class="anime flex">
+            <div class="anime_img flex flex-column">
+              <img src="img/anime/rezero.jpg" alt="Re Zero Poster" />
+            </div>
+            <div class="anime_details flex flex-column">
+              <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
+              <span class="synopsis">
+                The third season of Re:Zero kara Hajimeru Isekai Seikatsu. A
+                year has passed since Subaru’s victory at the Sanctuary. He
+                savors a life of fulfillment while Emilia’s camp stands united
+                for the royal selection—until a fateful letter arrives.
+                Anastasia, a royal selection candidate, has invited Emilia to
+                the Watergate City of Priestella. But as the party begins its
+                journey, crisis stirs beneath the surface and Subaru meets a
+                cruel fate once again. (Source: Crunchyroll)
+              </span>
+              <div class="anime_buttons flex-align-center flex flex-column">
+                <button class="watch">Watch</button>
+                <button class="plan">Plan to Watch</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/dandadan.jpg" alt="Dan Da Dan Poster">
+      </section>
+
+      <section id="trending_manga">
+        <h2>Trending Manga</h2>
+        <div id="manga_list" class="flex">
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img
+                src="img/manga/attackontitan.jpg"
+                alt="Attack on Titan Poster"
+              />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>Attack on Titan</h3>
+              <span class="synopsis">
+                In this post-apocalyptic sci-fi story, humanity has been
+                devastated by the bizarre, giant humanoids known as the Titans.
+                Little is known about where they came from or why they are bent
+                on consuming mankind. Seemingly unintelligent, they have roamed
+                the world for years, killing everyone they see. For the past
+                century, what's left of man has hidden in a giant, three-walled
+                city. People believe their 50-meter-high walls will protect them
+                from the Titans, but the sudden appearance of an immense Titan
+                is about to change everything. (Source: Kodansha USA)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
           </div>
-          <div class="anime_details flex flex-column">
-            <h3>Dan Da Dan</h3>
-            <span class="synopsis">
-              This is a story about Momo, a high school girl who comes from a family of spirit mediums, and her classmate Okarun, an occult fanatic. After Momo rescues Okarun from being bullied, they begin talking. However, an argument ensues between them since Momo believes in ghosts but denies aliens exist, and Okarun believes in aliens but denies ghosts exist. To prove to each other what they believe in is real, Momo goes to an abandoned hospital where a UFO has been spotted and Okarun goes to a tunnel rumored to be haunted. To their surprise, they each encounter overwhelming paranormal activities that transcend comprehension. Amid these predicaments, Momo awakens her hidden power and Okarun gains the power of a curse to overcome these new dangers! Their fateful love begins as well!? The story of the occult battle and adolescence starts! Notes: - Worldwide premiere of Episode 1 before the Japanese television premiere occurred at Anime Expo July 6, 2024. - Episodes 1-3 titled as DAN DA DAN: FIRST ENCOUNTER was pre-screened in advance in theaters on August 31, 2024 in Asia, September 7, 2024 in Europe and September 13, 2024 in North America. The regular TV broadcast began October 4, 2024.
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img src="img/manga/berserk.jpg" alt="Berserk Poster" />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>Berserk</h3>
+              <span class="synopsis">
+                His name is Guts, the Black Swordsman, a feared warrior spoken
+                of only in whispers. Bearer of a gigantic sword, an iron hand,
+                and the scars of countless battles and tortures, his flesh is
+                also indelibly marked with The Brand, an unholy symbol that
+                draws the forces of darkness to him and dooms him as their
+                sacrifice. But Guts won't take his fate lying down; he'll cut a
+                crimson swath of carnage through the ranks of the damned—and
+                anyone else foolish enough to oppose him! Accompanied by Puck
+                the Elf, more an annoyance than a companion, Guts relentlessly
+                follows a dark, bloodstained path that leads only to death...or
+                vengeance. (Source: Dark Horse)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img src="img/manga/chainsawman.png" alt="Chainsaw Man Poster" />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>Chainsaw Man</h3>
+              <span class="synopsis">
+                The name says it all! Denji's life of poverty is changed forever
+                when he merges with his pet chainsaw dog, Pochita! Now he's
+                living in the big city and an official Devil Hunter. But he's
+                got a lot to learn about his new job and chainsaw powers!
+                (Source: MANGA Plus)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img
+                src="img/manga/fullmetal.png"
+                alt="Fullmetal Alchemist Poster"
+              />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>Fullmetal Alchemist</h3>
+              <span class="synopsis">
+                Alchemy tore the Elric brothers’ bodies apart. Can their bond
+                make them whole again? In this world, alchemists are those who
+                study and perform the art of alchemical transmutation—the
+                science of manipulating and transforming matter. They are
+                bounded by the Law of Equivalent Exchange: in order to gain
+                something, one must sacrifice something of equal value. In an
+                alchemical ritual gone wrong, Edward Elric lost his arm and his
+                leg, and his brother Alphonse became nothing but a soul in a
+                suit of armor. Equipped with mechanical “auto-mail” limbs,
+                Edward becomes a state alchemist, seeking the one thing that can
+                restore his and his brother’s bodies...the legendary
+                Philosopher’s Stone. (Source: Viz Media)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img src="img/manga/jojo.png" alt="Jojo Steel Ball Run Poster" />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>JoJo's Bizarre Adventure: Part 7–Steel Ball Run</h3>
+              <span class="synopsis">
+                Originally presented as an unrelated story, this series was
+                later officially declared a part of the JoJo storyline. The
+                series stars Gyro Zeppeli, who uses a set of steel balls that
+                spin incredibly fast, and Johnny Joestar (Jonathan Joestar), a
+                former hot-shot jockey who was crippled by an ambusher and lost
+                his fame and fortune. They race, along with others, in a
+                mad-dash across America for 50 million dollars, reminiscent of
+                The Cannonball Run. (Source: Wikipedia)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img src="img/manga/monster.jpg" alt="Monster Poster" />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>Monster</h3>
+              <span class="synopsis">
+                Everyone faces uncertainty at some point in their lives. Even a
+                brilliant surgeon like Kenzo Tenma is no exception. But there’s
+                no way he could have known that his decision to stop chasing
+                professional success and instead concentrate on his oath to save
+                peoples’ lives would result in the birth of an abomination. The
+                questions of good and evil now take on a terrifyingly real
+                dimension. Years later, in Germany during the tumultuous
+                post-reunification period, middle-aged childless couples are
+                being killed one after another. The serial killer’s identity is
+                known. The reasons why he kills are not. Dr. Tenma sets out on a
+                journey to find the killer’s twin sister, who may hold some
+                clues to solving the enigma of the “Monster.” (Source: Viz
+                Media)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img src="img/manga/onepiece.jpg" alt="One Piece Poster" />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>One Piece</h3>
+              <span class="synopsis">
+                As a child, Monkey D. Luffy was inspired to become a pirate by
+                listening to the tales of the buccaneer "Red-Haired" Shanks. But
+                his life changed when Luffy accidentally ate the Gum-Gum Devil
+                Fruit and gained the power to stretch like rubber...at the cost
+                of never being able to swim again! Years later, still vowing to
+                become the king of the pirates, Luffy sets out on his
+                adventure...one guy alone in a rowboat, in search of the
+                legendary "One Piece," said to be the greatest treasure in the
+                world... (Source: Viz Media)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="manga flex">
+            <div class="manga_img flex flex-column">
+              <img src="img/manga/vinlandsaga.jpg" alt="Vinland Saga Poster" />
+            </div>
+            <div class="manga_details flex flex-column">
+              <h3>JoJo's Bizarre Adventure: Part 7–Steel Ball Run</h3>
+              <span class="synopsis">
+                As a child, Thorfinn sat at the feet of the great Leif Ericson
+                and thrilled to wild tales of a land far to the west. But his
+                youthful fantasies were shattered by a mercenary raid. Raised by
+                the Vikings who murdered his father, Thorfinn became a
+                terrifying warrior, forever seeking to kill the band's leader,
+                Askeladd, and avenge his father. Sustaining Thorfinn through his
+                ordeal are his pride in his family and his dreams of a fertile
+                westward land, a land without war or slavery … the land Leif
+                called Vinland. (Source: Kodansha USA)
+              </span>
+              <div class="manga_buttons flex-align-center flex flex-column">
+                <button class="watch">Read</button>
+                <button class="plan">Plan to Read</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/deathnote.jpg" alt="Death Note Poster">
+      </section>
+
+      <section id="user_posts">
+        <h2>Recent Posts</h2>
+
+        <div id="posts" class="flex flex-column">
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Crimson Stardust Chronicles</h4>
+              <span>
+                In a world where constellations hold the key to unimaginable
+                power, 17-year-old Kaida stumbles upon the lost "Crimson Star
+                Fragment" while stargazing. Hunted by celestial warriors and
+                shadowy guilds, she teams up with a rebellious swordsman, a
+                timid mage, and a talking fox with a dark past. Together, they
+                embark on a journey to uncover the truth behind the Crimson Star
+                and prevent an ancient prophecy from shattering their world.
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
+            </div>
           </div>
-          <div class="anime_details flex flex-column">
-            <h3>Death Note</h3>
-            <span class="synopsis">
-              Light Yagami is a genius high school student who is about to learn about life through a book of death. When a bored shinigami, a God of Death, named Ryuk drops a black notepad called a Death Note, Light receives power over life and death with the stroke of a pen. Determined to use this dark gift for the best, Light sets out to rid the world of evil… namely, the people he believes to be evil. Should anyone hold such power?
-
-              The consequences of Light’s actions will set the world ablaze.
-
-              (Source: Viz Media)
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Echoes of Sakura High</h4>
+              <span>
+                Sakura High seems like an ordinary school, but its quirky
+                students and bizarre clubs make it anything but typical. When
+                shy bookworm Haruto gets roped into joining the Paranormal
+                Studies Club, he meets Akari, a bold and cheerful girl who
+                claims to see ghosts. Between ghost-hunting adventures, awkward
+                romantic misunderstandings, and hilarious club antics, Haruto
+                learns that life can be unpredictable, but it’s the unexpected
+                moments that matter most.
+              </span>
+            </div>
+          </div>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Gearbound Eclipse</h4>
+              <span>
+                In the sprawling city of Oridane, powered by steam and gears, a
+                series of mysterious disappearances is linked to an ancient
+                machine called the Eclipse Engine. Aspiring inventor Elara and
+                rogue detective Dax form an unlikely partnership to unravel the
+                truth. As they navigate secret societies, airship battles, and
+                hidden agendas, they discover a conspiracy that threatens the
+                city’s future—and their own lives.
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
+            </div>
+          </div>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Petals of Rebirth</h4>
+              <span>
+                In feudal Japan, a cursed cherry blossom tree is said to grant
+                second chances at life. Hana, a young woman with a tragic past,
+                seeks the tree’s blessing to rewrite her destiny. But the tree’s
+                gift comes with a price—each choice she changes alters the lives
+                of others in ways she could never imagine. With every petal that
+                falls, Hana must decide whether to embrace her fate or keep
+                rewriting the past.
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
+            </div>
+          </div>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Cyber Idols: Dream Glitch</h4>
+              <span>
+                In the neon-lit megacity of Neo-Harmony, virtual idols dominate
+                the entertainment world. Rei, a struggling songwriter, discovers
+                a glitch in Harmony AI, the system controlling the idols. This
+                glitch creates Syn, an idol with emotions and free will. As Rei
+                and Syn rise to fame, they uncover the dark secrets of
+                Neo-Harmony’s corporate overlords. Can a digital dreamer and a
+                human artist rewrite the future, or will they be silenced
+                forever?
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
+            </div>
+          </div>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Shadowbound Academy: Cursed Hierarchy</h4>
+              <span>
+                In the prestigious Shadowbound Academy, where students master
+                the art of summoning spirits, only the strongest rise to the
+                top. Riku, an orphan with a mysterious past, is accepted into
+                the school despite having no known lineage. When he accidentally
+                summons a forbidden shadow beast, he is thrust into a deadly
+                hierarchy where alliances are fragile and betrayal is
+                inevitable. To survive, Riku must uncover the truth about his
+                powers and the academy’s sinister secrets.
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
+            </div>
+          </div>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Chronicles of the Skyforge</h4>
+              <span>
+                In a world where colossal mechs powered by elemental cores
+                defend humanity, 15-year-old mechanic Kira dreams of becoming a
+                Skyforger—a legendary pilot. When an ancient mech awakens
+                beneath her village, Kira bonds with the machine and becomes
+                humanity's last hope against an invading alien force. But with
+                enemies within and outside, Kira must learn to pilot the mech
+                and uncover its ancient purpose before it's too late.
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
+            </div>
+          </div>
+          <div class="post flex flex-align-center">
+            <div class="text flex flex-column">
+              <h4>Whispering Lanterns</h4>
+              <span>
+                Every year, the quiet village of Yuzuki hosts a festival where
+                lanterns guide lost spirits to the afterlife. Yumi, a skeptical
+                city girl visiting her grandmother, accidentally frees a
+                mischievous ghost named Ren from one of the lanterns. As Ren
+                leads Yumi on a journey to uncover the truth about her family’s
+                past, she discovers her ability to hear the whispers of spirits
+                and must decide whether to embrace her gift or let it go.
+              </span>
+            </div>
+            <div class="post_img">
+              <img src="img/profile.png" alt="User Post" />
             </div>
           </div>
         </div>
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/demonslayer.jpg" alt="Demon Slayer Poster">
-          </div>
-          <div class="anime_details flex flex-column">
-            <h3>Demon Slayer</h3>
-            <span class="synopsis">
-              It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.
+      </section>
 
-              (Source: Crunchyroll)
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
-            </div>
-          </div>
-        </div>
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/dragonball.jpg" alt="Dragon Ball Daima Poster">
-          </div>
-          <div class="anime_details flex flex-column">
-            <h3>Dragon Ball: Daima</h3>
-            <span class="synopsis">
-              Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy! When they discover that the reason for this may lie in a world known as the "Demon Realm", a mysterious young Majin named Glorio appears before them. Note: Relations are provisional and will be updated when more info is announced.
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
-            </div>
-          </div>
+      <section id="review_section">
+        <h2>Reviews</h2>
 
-        </div>
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/frieren.jpg" alt="Frieren Poster">
-          </div>
-          <div class="anime_details flex flex-column">
-            <h3>Frieren: Beyond Journey's End</h3>
-            <span class="synopsis">
-              The adventure is over but life goes on for an elf mage just beginning to learn what living is all about. Elf mage Frieren and her courageous fellow adventurers have defeated the Demon King and brought peace to the land. But Frieren will long outlive the rest of her former party. How will she come to understand what life means to the people around her? Decades after their victory, the funeral of one her friends confronts Frieren with her own near immortality. Frieren sets out to fulfill the last wishes of her comrades and finds herself beginning a new adventure…
-
-              (Source: Crunchyroll)
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
-            </div>
-          </div>
-
-        </div>
-        <div class="anime flex">
-          <div class="anime_img flex flex-column">
-            <img src="img/anime/rezero.jpg" alt="Re Zero Poster">
-          </div>
-          <div class="anime_details flex flex-column">
-            <h3>Re:ZERO -Starting Life in Another World- Season 3</h3>
-            <span class="synopsis">
-              The third season of Re:Zero kara Hajimeru Isekai Seikatsu.
-
-              A year has passed since Subaru’s victory at the Sanctuary. He savors a life of fulfillment while Emilia’s camp stands united for the royal selection—until a fateful letter arrives. Anastasia, a royal selection candidate, has invited Emilia to the Watergate City of Priestella. But as the party begins its journey, crisis stirs beneath the surface and Subaru meets a cruel fate once again.
-
-              (Source: Crunchyroll)
-            </span>
-            <div class="anime_buttons flex-align-center flex flex-column">
-              <button class="watch">Watch</button>
-              <button class="plan">Plan to Watch</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="trending_manga">
-      <h2>
-        Trending Manga
-      </h2>
-      <div id="manga_list" class="flex">
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/attackontitan.jpg" alt="Attack on Titan Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>Attack on Titan</h3>
-            <span class="synopsis">
-              In this post-apocalyptic sci-fi story, humanity has been devastated by the bizarre, giant humanoids known as the Titans. Little is known about where they came from or why they are bent on consuming mankind. Seemingly unintelligent, they have roamed the world for years, killing everyone they see. For the past century, what's left of man has hidden in a giant, three-walled city. People believe their 50-meter-high walls will protect them from the Titans, but the sudden appearance of an immense Titan is about to change everything.
-
-              (Source: Kodansha USA)
-
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/berserk.jpg" alt="Berserk Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>Berserk</h3>
-            <span class="synopsis">
-              His name is Guts, the Black Swordsman, a feared warrior spoken of only in whispers. Bearer of a gigantic sword, an iron hand, and the scars of countless battles and tortures, his flesh is also indelibly marked with The Brand, an unholy symbol that draws the forces of darkness to him and dooms him as their sacrifice. But Guts won't take his fate lying down; he'll cut a crimson swath of carnage through the ranks of the damned—and anyone else foolish enough to oppose him! Accompanied by Puck the Elf, more an annoyance than a companion, Guts relentlessly follows a dark, bloodstained path that leads only to death...or vengeance.
-
-              (Source: Dark Horse)
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/chainsawman.png" alt="Chainsaw Man Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>Chainsaw Man</h3>
-            <span class="synopsis">
-              The name says it all! Denji's life of poverty is changed forever when he merges with his pet chainsaw dog, Pochita! Now he's living in the big city and an official Devil Hunter. But he's got a lot to learn about his new job and chainsaw powers!
-
-              (Source: MANGA Plus)
-
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/fullmetal.png" alt="Fullmetal Alchemist Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>Fullmetal Alchemist</h3>
-            <span class="synopsis">
-              Alchemy tore the Elric brothers’ bodies apart. Can their bond make them whole again?
-              In this world, alchemists are those who study and perform the art of alchemical transmutation—the science of manipulating and transforming matter. They are bounded by the Law of Equivalent Exchange: in order to gain something, one must sacrifice something of equal value.
-              In an alchemical ritual gone wrong, Edward Elric lost his arm and his leg, and his brother Alphonse became nothing but a soul in a suit of armor. Equipped with mechanical “auto-mail” limbs, Edward becomes a state alchemist, seeking the one thing that can restore his and his brother’s bodies...the legendary Philosopher’s Stone.
-
-              (Source: Viz Media)
-
-
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/jojo.png" alt="Jojo Steel Ball Run Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>JoJo's Bizarre Adventure: Part 7–Steel Ball Run</h3>
-            <span class="synopsis">
-              Originally presented as an unrelated story, this series was later officially declared a part of the JoJo storyline. The series stars Gyro Zeppeli, who uses a set of steel balls that spin incredibly fast, and Johnny Joestar (Jonathan Joestar), a former hot-shot jockey who was crippled by an ambusher and lost his fame and fortune. They race, along with others, in a mad-dash across America for 50 million dollars, reminiscent of The Cannonball Run.
-
-              (Source: Wikipedia)
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/monster.jpg" alt="Monster Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>Monster</h3>
-            <span class="synopsis">
-              Everyone faces uncertainty at some point in their lives. Even a brilliant surgeon like Kenzo Tenma is no exception. But there’s no way he could have known that his decision to stop chasing professional success and instead concentrate on his oath to save peoples’ lives would result in the birth of an abomination. The questions of good and evil now take on a terrifyingly real dimension.
-
-              Years later, in Germany during the tumultuous post-reunification period, middle-aged childless couples are being killed one after another. The serial killer’s identity is known. The reasons why he kills are not. Dr. Tenma sets out on a journey to find the killer’s twin sister, who may hold some clues to solving the enigma of the “Monster.”
-
-              (Source: Viz Media)
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/onepiece.jpg" alt="One Piece Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>One Piece</h3>
-            <span class="synopsis">
-              As a child, Monkey D. Luffy was inspired to become a pirate by listening to the tales of the buccaneer "Red-Haired" Shanks. But his life changed when Luffy accidentally ate the Gum-Gum Devil Fruit and gained the power to stretch like rubber...at the cost of never being able to swim again! Years later, still vowing to become the king of the pirates, Luffy sets out on his adventure...one guy alone in a rowboat, in search of the legendary "One Piece," said to be the greatest treasure in the world...
-
-              (Source: Viz Media)
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-        <div class="manga flex">
-          <div class="manga_img flex flex-column">
-            <img src="img/manga/vinlandsaga.jpg" alt="Vinland Saga Poster">
-          </div>
-          <div class="manga_details flex flex-column">
-            <h3>JoJo's Bizarre Adventure: Part 7–Steel Ball Run</h3>
-            <span class="synopsis">
-              As a child, Thorfinn sat at the feet of the great Leif Ericson and thrilled to wild tales of a land far to the west. But his youthful fantasies were shattered by a mercenary raid. Raised by the Vikings who murdered his father, Thorfinn became a terrifying warrior, forever seeking to kill the band's leader, Askeladd, and avenge his father. Sustaining Thorfinn through his ordeal are his pride in his family and his dreams of a fertile westward land, a land without war or slavery … the land Leif called Vinland.
-
-              (Source: Kodansha USA)
-            </span>
-            <div class="manga_buttons flex-align-center flex flex-column">
-              <button class="watch">Read</button>
-              <button class="plan">Plan to Read</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="user_posts">
-      <h2>
-        Recent Posts
-      </h2>
-
-      <div id="posts" class="flex flex-column">
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
+        <div id="reviews">
+          <div class="review flex flex-column flex-justify-center">
+            <img src="img/reviews/1.jpg" alt="Review" class="review_img" />
+            <h4>Monster, a review by bjrdman</h4>
             <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
+              What a wild ride. How simple really is good vs evil? SPOILER
+              WARNING Sure, good vs evil, a trope as old as time. Evil is
+              corrupt, it begets more evil. Death, destruction, trauma,
+              nihilism. What happens when one person, who is born of evil, and
+              molded in the flames, destruction and violence of an orphanage
+              that tortured him, is met with the unshakable resilience of one
+              Kenzo Tenma, and his belief in one moral code; every life is equal
+              and created with inherent meaning.
             </span>
+            <div class="flex icons">
+              <div class="flex like">
+                <img src="img/like.svg" alt="Like" />
+                98
+              </div>
+              <div class="flex dislike">
+                <img src="img/dislike.svg" alt="Dislike" />
+                19
+              </div>
+            </div>
           </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
+          <div class="review flex flex-column flex-justify-center">
+            <h4>Greatest Show</h4>
             <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
+              I would highly reccomend checking in on the movies above, absolute
+              drama masterpieces, if you like a silent voice, you will also love
+              them. And that's it, ive been writing here for 20 minutes now and
+              had a blast just getting my thoughts out into this miracle called
+              "language", man I still wonder how we created it.
             </span>
+            <div class="flex icons">
+              <div class="flex">
+                <img src="img/like.svg" alt="Like" />
+                98
+              </div>
+              <div class="flex">
+                <img src="img/dislike.svg" alt="Dislike" />
+                19
+              </div>
+            </div>
           </div>
-
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
+          <div class="review flex flex-column flex-justify-center">
+            <img src="img/reviews/2.jpg" alt="Review" class="review_img" />
+            <h4>Rascal Does Not Dream of Senpai, a review by Hiketsu</h4>
             <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
+              The rare and mysterious Puberty Syndrome, believed by many to be a
+              myth, is a supernatural condition that only affects teenagers.
+              High school student Sakuta Azusagawa, having experienced it
+              firsthand, knows it is real and surprisingly common at his school.
+              One day, he encounters Mai Sakurajima, a famous former child
+              actress now in her third year of high school, who has withdrawn
+              from the public eye for unknown reasons. Despite her popularity
+              and aloof demeanor, no one seems to notice her wandering the
+              library dressed as a bunny girl—except for Sakuta. Realizing she
+              is another victim of Puberty Syndrome, Sakuta decides to help Mai
+              with her unique predicament, which leads him to cross paths with
+              other girls suffering from the mysterious phenomenon.
             </span>
+            <div class="flex icons">
+              <div class="flex">
+                <img src="img/like.svg" alt="Like" />
+                98
+              </div>
+              <div class="flex">
+                <img src="img/dislike.svg" alt="Dislike" />
+                19
+              </div>
+            </div>
           </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
+          <div class="review flex flex-column flex-justify-center">
+            <img src="img/reviews/3.jpg" alt="Review" class="review_img" />
+            <h4>Violet Evergarden, a review by BrunoTotti</h4>
             <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
+              After all those years watching anime, it becomes harder to find
+              shows that actually surprises and touches you deeply like Violet
+              Evergarden was able to do. I've known about this show for quite a
+              while now, but only after surpassing the mark of a thousand animes
+              whatched, i finally decided to give it a chance, and that made me
+              realize how wrong i was for taking so long to see it. That's why i
+              decided to make my first ever anime review about it.
             </span>
-          </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
-            <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
-            </span>
-          </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
-            <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
-            </span>
-          </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
-            <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
-            </span>
-          </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-        <div class="post flex flex-align-center">
-          <div class="text flex flex-column">
-            <h4>
-              Title of Some Post
-            </h4>
-            <span>
-              I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them.
-
-              And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it. It's truly magic. Have a great sleep the next time you sleep, take care, don't jump of a balcony just to swap with someone else and bye bye.
-            </span>
-          </div>
-          <div class="post_img">
-            <img src="img/profile.png" alt="User Post">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="review_section">
-      <h2>
-        Reviews
-      </h2>
-
-      <div id="reviews">
-        <div class="review flex flex-column flex-justify-center">
-          <img src="img/reviews/1.jpg" alt="Review" class="review_img">
-          <h4>
-            Monster, a review by bjrdman
-          </h4>
-          <span>
-            What a wild ride.
-
-            How simple really is good vs evil?
-
-            SPOILER WARNING
-
-            Sure, good vs evil, a trope as old as time. Evil is corrupt, it begets more evil. Death, destruction, trauma, nihilism. What happens when one person, who is born of evil, and molded in the flames, destruction and violence of an orphanage that tortured him, is met with the unshakable resilience of one Kenzo Tenma, and his belief in one moral code; every life is equal and created with inherent meaning.
-          </span>
-          <div class="flex icons">
-            <div class="flex like">
-              <img src="img/like.svg" alt="Like">
-              98
-            </div>
-            <div class="flex dislike">
-              <img src="img/dislike.svg" alt="Dislike">
-              19
+            <div class="flex icons">
+              <div class="flex">
+                <img src="img/like.svg" alt="Like" />
+                98
+              </div>
+              <div class="flex">
+                <img src="img/dislike.svg" alt="Dislike" />
+                19
+              </div>
             </div>
           </div>
         </div>
-        <div class="review flex flex-column flex-justify-center">
+      </section>
 
-          <h4>
-            Greatest Show
-          </h4>
-          <span>
-            I would highly reccomend checking in on the movies above, absolute drama masterpieces, if you like a silent voice, you will also love them. And that's it, ive been writing here for 20 minutes now and had a blast just getting my thoughts out into this miracle called "language", man I still wonder how we created it.
-          </span>
-          <div class="flex icons">
-            <div class="flex">
-              <img src="img/like.svg" alt="Like">
-              98
-            </div>
-            <div class="flex">
-              <img src="img/dislike.svg" alt="Dislike">
-              19
-            </div>
+      <section id="site_updates">
+        <h2>Updates</h2>
+        <div class="update">
+          <img src="img/logo.png" alt="Logo" class="update_logo" />
+          <span class="title">AniTracker Site Update</span>
+          <span class="time">1 month ago</span>
+          <div class="changelog">
+            Apologies for that downtime. It was a simple fix, but neither nazo
+            nor I (TehNut) were immediately available to take care of it.
           </div>
         </div>
-        <div class="review flex flex-column flex-justify-center">
-          <img src="img/reviews/2.jpg" alt="Review" class="review_img">
-          <h4>
-            Rascal Does Not Dream of Senpai, a review by Hiketsu
-          </h4>
-          <span>
-            The rare and mysterious Puberty Syndrome, believed by many to be a myth, is a supernatural condition that only affects teenagers. High school student Sakuta Azusagawa, having experienced it firsthand, knows it is real and surprisingly common at his school. One day, he encounters Mai Sakurajima, a famous former child actress now in her third year of high school, who has withdrawn from the public eye for unknown reasons. Despite her popularity and aloof demeanor, no one seems to notice her wandering the library dressed as a bunny girl—except for Sakuta. Realizing she is another victim of Puberty Syndrome, Sakuta decides to help Mai with her unique predicament, which leads him to cross paths with other girls suffering from the mysterious phenomenon.
-          </span>
-          <div class="flex icons">
-            <div class="flex">
-              <img src="img/like.svg" alt="Like">
-              98
-            </div>
-            <div class="flex">
-              <img src="img/dislike.svg" alt="Dislike">
-              19
-            </div>
+        <div class="update">
+          <img src="img/logo.png" alt="Logo" class="update_logo" />
+          <span class="title">AniTracker Site Update</span>
+          <span class="time">2 month ago</span>
+          <div class="changelog">
+            We investigated some strange character favorite counts and
+            discovered a bot network of almost 11,000 accounts that created
+            around 200,000 invalid favorites across a number of popular
+            characters. These favorites have been cleared.
+            <br />
+            There are most definitely still some botted favorite counts out
+            there. We will find you, and we will purge you.
+            <br />
+            Here are some examples of pre-purge favorite counts: (These counts
+            will be fixed automatically once the daily task runs.)
+            <br />
+            <ul>
+              <li>Fern: 5.8k -> 4.9k</li>
+              <li>Roxy Migurdia: 10.5k -> 8.8k</li>
+              <li>Chika Fujiwara: 18.8k -> 15.3k</li>
+              <li>Emilia: 26k -> 17k</li>
+            </ul>
           </div>
         </div>
-        <div class="review flex flex-column flex-justify-center">
-          <img src="img/reviews/3.jpg" alt="Review" class="review_img">
-          <h4>
-            Violet Evergarden, a review by BrunoTotti
-          </h4>
-          <span>
-            After all those years watching anime, it becomes harder to find shows that actually surprises and touches you deeply like Violet Evergarden was able to do. I've known about this show for quite a while now, but only after surpassing the mark of a thousand animes whatched, i finally decided to give it a chance, and that made me realize how wrong i was for taking so long to see it. That's why i decided to make my first ever anime review about it.
-          </span>
-          <div class="flex icons">
-            <div class="flex">
-              <img src="img/like.svg" alt="Like">
-              98
-            </div>
-            <div class="flex">
-              <img src="img/dislike.svg" alt="Dislike">
-              19
-            </div>
+        <div class="update">
+          <img src="img/logo.png" alt="Logo" class="update_logo" />
+          <span class="title">AniTracker Site Update</span>
+          <span class="time">4 month ago</span>
+          <div class="changelog">
+            We seem to have stabilized for now. Will continue monitoring.
+            <br />
+            Also API back up
           </div>
         </div>
+        <div class="update">
+          <img src="img/logo.png" alt="Logo" class="update_logo" />
+          <span class="title">AniTracker Site Update</span>
+          <span class="time">5 month ago</span>
+          <div class="changelog">
+            The issue went away on it's own yesterday without us figuring out
+            the cause. We know where the issue is, but not why the issue is.
+            <br />
+            We will be disabling the API temporarily to see if a reduced load
+            solves the problem.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W" />
+      <h2 id="title_footer">AniTracker</h2>
+      <div
+        id="group_members"
+        class="flex flex-align-center flex-justify-center"
+      >
+        <span>Shivam Patel</span>
+        <span>Diksha Smotra</span>
+        <span>Krish Lavani</span>
+        <span>Neel Patel</span>
+        <span>Jasdeep Singh Dhillon</span>
       </div>
 
-    </section>
-
-    <section id="site_updates">
-      <h2>
-        Updates
-      </h2>
-      <div class="update">
-        <img src="img/logo.png" alt="Logo" class="update_logo">
-        <span class="title">AniTracker Site Update</span>
-        <span class="time">1 month ago</span>
-        <div class="changelog">
-          Apologies for that downtime. It was a simple fix, but neither nazo nor I (TehNut) were immediately available to take care of it.
-        </div>
+      <div id="references">
+        <h3>References</h3>
+        <ul>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
+          "
+              >Get Responsive Background Image</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe"
+            >
+              Responsive Grid
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="update">
-        <img src="img/logo.png" alt="Logo" class="update_logo">
-        <span class="title">AniTracker Site Update</span>
-        <span class="time">2 month ago</span>
-        <div class="changelog">
-          We investigated some strange character favorite counts and discovered a bot network of almost 11,000 accounts that created around 200,000 invalid favorites across a number of popular characters. These favorites have been cleared.
-          <br>
-          There are most definitely still some botted favorite counts out there. We will find you, and we will purge you.
-          <br>
-          Here are some examples of pre-purge favorite counts:
-          (These counts will be fixed automatically once the daily task runs.)
-          <br>
-          <ul>
-            <li>
-              Fern: 5.8k -> 4.9k
-            </li>
-            <li>
-              Roxy Migurdia: 10.5k -> 8.8k
-            </li>
-            <li>
-              Chika Fujiwara: 18.8k -> 15.3k
-            </li>
-            <li>
-              Emilia: 26k -> 17k
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="update">
-        <img src="img/logo.png" alt="Logo" class="update_logo">
-        <span class="title">AniTracker Site Update</span>
-        <span class="time">4 month ago</span>
-        <div class="changelog">
-          We seem to have stabilized for now. Will continue monitoring.
-          <br>
-          Also API back up
-        </div>
-      </div>
-      <div class="update">
-        <img src="img/logo.png" alt="Logo" class="update_logo">
-        <span class="title">AniTracker Site Update</span>
-        <span class="time">5 month ago</span>
-        <div class="changelog">
-          The issue went away on it's own yesterday without us figuring out the cause. We know where the issue is, but not why the issue is.
-          <br>
-          We will be disabling the API temporarily to see if a reduced load solves the problem.
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <img id="logo_footer" src="img/logo_footer.png" alt="Logo Site B&W">
-    <h2 id="title_footer">AniTracker</h2>
-    <div id="group_members" class="flex flex-align-center flex-justify-center">
-      <span>Shivam Patel</span>
-      <span>Diksha Smotra</span>
-      <span>Krish Lavani</span>
-      <span>Neel Patel</span>
-      <span>Jasdeep Singh Dhillon</span>
-    </div>
 
-    <div id="references">
-      <h3>References</h3>
-      <ul>
-        <li>
-          <a href="https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size
-          ">Get Responsive Background Image</a>
-        </li>
-        <li>
-          <a href="https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe">
-            Responsive Grid
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Conestoga College">Conestoga College</iframe>
-    <div id="footer_ds_id">
-      <h2>Join Us</h2>
-      <form class="subscribe-form_ds_class">
-        <input type="email" placeholder="Enter your email address">
-        <button>SUBSCRIBE</button>
-      </form>
-    </div>
-  </footer>
-</body>
-
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3961666099326!2d-80.40700802308038!3d43.38964836943565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1734069522705!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Conestoga College"
+        >Conestoga College</iframe
+      >
+      <div id="footer_ds_id">
+        <h2>Join Us</h2>
+        <form class="subscribe-form_ds_class">
+          <input type="email" placeholder="Enter your email address" />
+          <button>SUBSCRIBE</button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
