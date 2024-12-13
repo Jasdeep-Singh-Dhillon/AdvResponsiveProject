@@ -1059,10 +1059,11 @@ footer {
 }
 
 .tabs_ds_class button {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   font-size: 1rem;
   margin-top: 10px;
+  margin  as auto;
   border: 2px solid #c63f72;
   background: black;
   color: white;
