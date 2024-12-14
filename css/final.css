@@ -704,6 +704,7 @@ footer {
 
 #body_kl {
   font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 #header_kl {
