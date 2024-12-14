@@ -270,8 +270,8 @@ footer {
       "icon"
       "title"
       "group"
-      "references"
       "map"
+      "references"
       "join";
   }
 
@@ -281,6 +281,10 @@ footer {
 
   #title_footer {
     justify-self: center;
+  }
+
+  #map {
+    width: 100%;
   }
 
   .trending,
