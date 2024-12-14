@@ -2199,7 +2199,7 @@ input[type="range"] {
 }
 
 /* Smooth floating animation for the cards */
-@keyframes float-card {
+/* @keyframes float-card {
   0% {
     transform: translateY(0px);
   }
@@ -2209,7 +2209,7 @@ input[type="range"] {
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 .popular-card img {
   width: 100%;
